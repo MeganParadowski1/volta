@@ -1,0 +1,18 @@
+.title {
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.titleContainer {
+  position: absolute;
+  margin-top: 15rem;
+  z-index: 1;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+}
+.subtitle {
+  text-align: center;
+}
