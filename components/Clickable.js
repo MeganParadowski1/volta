@@ -9,9 +9,9 @@ export default function Clickable({ titleDiv, popupDiv }) {
     return <span>{popupDiv}</span>;
   };
   return (
-    <span onClick={toggle}>
-      {titleDiv}
+    <div>
+      <span onClick={toggle}>{titleDiv}</span>
       {showText && <PopupText />}
-    </span>
+    </div>
   );
 }

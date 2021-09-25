@@ -1,21 +1,91 @@
 .nav {
+  z-index: 1;
   position: absolute;
-  padding: 1.5rem 1.5rem;
+  padding: 3rem 3rem;
   width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: white;
+  font-weight: 300;
+}
+.alternateNav {
+  color: darkslategray;
+}
+.navbg {
+  font-size: 44px;
+  font-weight: 600;
+  font-family: bodoni;
+  opacity: 25%;
+  margin: -24px -24px;
+  letter-spacing: 3px;
 }
 .navitem {
-  margin-right: 3rem;
   display: inline;
-  cursor: pointer;
+  padding-right: 25px;
+}
+.topright {
+  position: inherit;
+  right: 3rem;
+  color: darkslategray;
+}
+.toprightImg {
+  height: 18px;
+  margin-left: 10px;
+}
+.bottomright {
+  position: inherit;
+  right: 3rem;
+  bottom: 3rem;
+}
+.topleft {
+  position: inherit;
+  left: 3rem;
+}
+.bottomleft {
+  position: inherit;
+  left: 3rem;
+  bottom: 3rem;
 }
 .hovertext {
-  float: right;
-  font-weight: 600;
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  margin-top: -135px;
   writing-mode: vertical-lr;
-  height: 100%;
+  height: 270px;
+  font-size: 1rem;
+  letter-spacing: initial;
+  text-transform: initial;
+  text-align: center;
 }
 .hoveritem {
   display: inline;
   text-align: right;
   padding-bottom: 6%;
+}
+.logo {
+  position: fixed;
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 2rem 2rem;
+  }
+  .topleft {
+    margin-right: 2rem;
+  }
+  .bottomleft {
+    bottom: 2rem;
+  }
+  .topright {
+    right: 2rem;
+  }
+  .bottomright {
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .hovertext {
+    right: 1rem;
+  }
 }

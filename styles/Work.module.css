@@ -1,0 +1,38 @@
+.workMain {
+  color: darkslategray;
+}
+.pageTitle {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  top: 50%;
+  margin-top: -50px;
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 4rem;
+}
+.video {
+  width: 600px;
+}
+.description {
+  margin: 1;
+  font-size: 14px;
+  line-height: 2;
+}
+.list {
+  position: absolute;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  top: 12rem;
+  z-index: 1;
+}
+.announcement {
+  margin: 200px 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 768px) {
+}

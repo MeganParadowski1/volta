@@ -1,0 +1,36 @@
+.infoMain {
+  position: absolute;
+  color: darkslategray;
+  top: 50%;
+  height: 450px;
+  margin-top: -225px;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+}
+.infoText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+.pageTitle {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+.photo {
+  position: absolute;
+  width: 500px;
+  top: 500px;
+  left: 50%;
+  margin-left: -250px;
+  padding-bottom: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .pageTitle {
+    font-size: 30px;
+  }
+}

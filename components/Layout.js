@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@200;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&family=Montserrat:wght@200;300;400;600&display=swap"
           rel="stylesheet"
         />
       </Head>
