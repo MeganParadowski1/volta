@@ -7,12 +7,16 @@
   width: 600px;
   left: 50%;
   margin-left: -300px;
+  z-index: 9;
 }
 .infoText {
   font-size: 16px;
   font-weight: 300;
   line-height: 2;
   letter-spacing: 2px;
+  padding-bottom: 100px;
+  overflow: auto;
+
 }
 .pageTitle {
   font-family: "Bodoni Moda", serif;
@@ -30,7 +34,11 @@
   padding-bottom: 200px;
 }
 @media only screen and (max-width: 768px) {
+  .infoMain {
+    width: 325px;
+    margin-left: -162.5px;
+  }
   .pageTitle {
-    font-size: 30px;
+      text-align: center;
   }
 }

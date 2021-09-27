@@ -54,10 +54,10 @@ export default function Nav({ props }) {
           <a className={styles.bottomright}>Work</a>
         </Link>
         <div className={styles.topright}>
-          <a href="http://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/volta_collective/" target="_blank">
             <img src="/insta-logo-white.png" className={styles.toprightImg} />
           </a>
-          <a href="http://vimeo.com" target="_blank">
+          <a href="https://vimeo.com/589567244" target="_blank">
             <img src="/vimeo-logo-white.png" className={styles.toprightImg} />
           </a>
         </div>

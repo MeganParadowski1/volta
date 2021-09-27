@@ -17,8 +17,9 @@ export default function Home() {
     container.appendChild(renderer.domElement);
 
     //Crazy sizing
-    const ratio = video.videoWidth / video.videoHeight;
+    const ratio = 1.7777777777777777;
     let width = window.innerHeight * ratio;
+    console.log(ratio, width);
     if (width > window.innerWidth) {
       renderer.setSize(width, window.innerHeight);
       const marginLeft = Math.abs(window.innerWidth - width) / 2;
@@ -42,6 +43,7 @@ export default function Home() {
 
     let isMouseMoving = false;
 
+    let frame;
     function animate() {
       if (isMouseMoving) {
         glitchPass.goWild = true;
@@ -49,7 +51,7 @@ export default function Home() {
         glitchPass.goWild = false;
         composer.removePass(glitchPass);
       }
-      requestAnimationFrame(animate);
+      frame = requestAnimationFrame(animate);
       composer.render();
     }
     animate();
@@ -75,7 +77,13 @@ export default function Home() {
     }
     window.addEventListener("resize", onWindowResize);
     window.addEventListener("mousemove", onMouseMove);
-  });
+
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("resize", onWindowResize);
+      window.removeEventListener("mousemove", onMouseMove);
+    };
+  }, []);
   return (
     <Layout>
       <div className={styles.titleContainer}>
@@ -90,7 +98,7 @@ export default function Home() {
         autoPlay
         loop
         muted
-        playsInline={false}
+        playsInline="False"
       />
       <div className={styles.videoOverlay} />
     </Layout>

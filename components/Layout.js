@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         />
       </Head>
       <Nav />
-      <div className={styles.mainContent}>{children}</div>
+      {children}
     </div>
   );
 }
