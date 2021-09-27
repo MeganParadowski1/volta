@@ -57,7 +57,7 @@ export default function Nav({ props }) {
           <a href="https://www.instagram.com/volta_collective/" target="_blank">
             <img src="/insta-logo-white.png" className={styles.toprightImg} />
           </a>
-          <a href="https://vimeo.com/589567244" target="_blank">
+          <a href="https://vimeo.com/voltacollective" target="_blank">
             <img src="/vimeo-logo-white.png" className={styles.toprightImg} />
           </a>
         </div>
