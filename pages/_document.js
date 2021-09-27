@@ -4,7 +4,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel="preload" href="/email_icon_green.png" as="image" />
+          <link rel="preload" href="/vimeo-logo-green.png" as="image" />
+        </Head>
         <body>
           <Main />
           <div id="modal" />
