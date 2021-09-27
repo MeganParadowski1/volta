@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -12,7 +13,17 @@ function MyApp({ Component, pageProps }) {
       document.documentElement.style.overflow = "auto";
     }
   }, [path]);
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
