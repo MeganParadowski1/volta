@@ -30,21 +30,13 @@ export default function Home() {
     console.log(window.innerWidth, window.innerHeight);
     let width = window.innerHeight * ratio;
     console.log(ratio, width);
-    // if (width > window.innerWidth) {
-    //   console.log("mobile");
-    //   renderer.setSize(width, window.innerHeight);
-    //   const marginLeft = Math.abs(window.innerWidth - width) / 2;
-    //   container.style.marginLeft = `${-marginLeft}px`;
-    // } else {
     renderer.setSize(window.innerWidth, window.innerHeight);
-    // }
 
     const texture = new THREE.VideoTexture(video);
 
     const geometry = new THREE.PlaneBufferGeometry(ratio, 1);
     const material = new THREE.MeshBasicMaterial({ map: texture });
     const plane = new THREE.Mesh(geometry, material);
-    // plane.scale.set(0.3, 0.3, 0.5);
     scene.add(plane);
 
     const composer = new EffectComposer(renderer);
@@ -71,20 +63,14 @@ export default function Home() {
 
     function onWindowResize() {
       console.log("resize");
-      // setTimeout(() => {
-      renderer.setSize(0, 0);
-      width = window.innerHeight * ratio;
-      console.log(window.innerWidth, window.innerHeight);
-      // if (width > window.innerWidth) {
-      //   renderer.setSize(width, window.innerHeight);
-      //   const marginLeft = Math.abs(window.innerWidth - width) / 2;
-      //   container.style.marginLeft = `${-marginLeft}px`;
-      // } else {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      // }
-      // }, 1000);
+
+      setTimeout(() => {
+        renderer.setSize(0, 0);
+        width = window.innerHeight * ratio;
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }, 100);
     }
     function onMouseMove() {
       if (!isMouseMoving) {
@@ -112,7 +98,14 @@ export default function Home() {
       </div>
       <div
         id="videoContainer"
-        style={{ position: "absolute", overflow: "hidden" }}
+        style={{
+          position: "absolute",
+          overflow: "hidden",
+          width: "100%",
+          height: "100%",
+          top: 0,
+          left: 0,
+        }}
       />
       <video
         id="video"
