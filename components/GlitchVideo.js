@@ -101,6 +101,7 @@ export default function GlitchVideo() {
           height: "100%",
           top: 0,
           left: 0,
+          zIndex: "-1",
         }}
       />
       <video
