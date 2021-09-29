@@ -1,6 +1,11 @@
 .workMain {
   color: darkslategray;
   height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 .workTitle {
   text-align: center;

@@ -16,7 +16,7 @@ export default function Work() {
           <div className={styles.workText}>
             Debuted in Sizzle! Dance & Film Online Festival
           </div>
-          <a href="https://vimeo.com/616193285">
+          <a href="https://vimeo.com/616193285" target="_blank">
             <img className={styles.vimeoLogo} src="/vimeo-logo-green.png" />
           </a>
         </div>
