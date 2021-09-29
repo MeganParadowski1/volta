@@ -4,6 +4,9 @@ import { useEffect } from "react";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 
+import "../styles/Info.module.css";
+import "../styles/Work.module.css";
+
 const pageVariants = {
   pageInitial: {
     opacity: 0,
