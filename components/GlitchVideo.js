@@ -48,15 +48,17 @@ export default function GlitchVideo() {
     let isMouseMoving = false;
 
     let frame;
+    let frameCount = 0;
     function animate() {
-      controls.update();
       if (isMouseMoving) {
         glitchPass.goWild = true;
-      } else {
+      }
+      if (frameCount > 30) {
         glitchPass.goWild = false;
         composer.removePass(glitchPass);
       }
       frame = requestAnimationFrame(animate);
+      frameCount += 1;
       composer.render();
     }
     animate();
@@ -72,13 +74,19 @@ export default function GlitchVideo() {
         renderer.setSize(window.innerWidth, window.innerHeight);
       }, 100);
     }
+    let timer;
+    function checkMouseStop() {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        isMouseMoving = false;
+      }, 200);
+    }
     function onMouseMove() {
+      checkMouseStop();
       if (!isMouseMoving) {
         isMouseMoving = true;
+        frameCount = 0;
         composer.addPass(glitchPass);
-        setTimeout(() => {
-          isMouseMoving = false;
-        }, 200);
       }
     }
     window.addEventListener("resize", onWindowResize);
