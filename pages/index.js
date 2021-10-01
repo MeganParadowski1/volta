@@ -44,14 +44,17 @@ export default function Home() {
     let isMouseMoving = false;
 
     let frame;
+    let frameCount = 0;
     function animate() {
       if (isMouseMoving) {
         glitchPass.goWild = true;
-      } else {
+      }
+      if (frameCount > 30) {
         glitchPass.goWild = false;
         composer.removePass(glitchPass);
       }
       frame = requestAnimationFrame(animate);
+      frameCount += 1;
       composer.render();
     }
     animate();
@@ -66,13 +69,19 @@ export default function Home() {
         renderer.setSize(window.innerWidth, window.innerHeight);
       }
     }
+    let timer;
+    function checkMouseStop() {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        isMouseMoving = false;
+      }, 200);
+    }
     function onMouseMove() {
-      if (!isMouseMoving) {
+      checkMouseStop();
+      if (!isMouseMoving && frameCount > 50) {
         isMouseMoving = true;
+        frameCount = 0;
         composer.addPass(glitchPass);
-        setTimeout(() => {
-          isMouseMoving = false;
-        }, 200);
       }
     }
     window.addEventListener("resize", onWindowResize);
