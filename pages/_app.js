@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
+import "../styles/Home.module.css";
 
 import Router from "next/router";
 
