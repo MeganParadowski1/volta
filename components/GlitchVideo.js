@@ -115,7 +115,6 @@ export default function GlitchVideo() {
       <video
         id="video"
         className={styles.homeVideo}
-        // style={{ opacity: 0, width: 100, height: 100 }}
         src="/volta_perf.mp4"
         autoPlay
         loop

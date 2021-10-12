@@ -1,5 +1,5 @@
 .workMain {
-  color: darkslategray;
+  color: #cd5874;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -10,7 +10,6 @@
 .workTitle {
   text-align: center;
   width: 100%;
-  height: 100px;
   font-family: "Bodoni Moda", serif;
   letter-spacing: 2px;
   font-weight: 900;
@@ -23,51 +22,35 @@
   line-height: 2;
   letter-spacing: 2px;
 }
+.block {
+  margin-top: 200px;
+}
+.item {
+  position: relative;
+  margin-bottom: 50px;
+}
+.video {
+  position: absolute;
+  height: 225px;
+}
 .frenzy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  top: 100px;
 }
-.vimeoLogo {
-  height: 18px;
-  position: absolute;
-  left: 50%;
-  margin-left: -20.6px;
-  margin-top: 20px;
-}
-.workVideo {
-  position: absolute;
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
-  margin-top: 25px;
-  padding-bottom: 100px;
-}
-.description {
-  margin: 1;
-  font-size: 14px;
-  line-height: 2;
-}
-.list {
-  position: absolute;
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
-  top: 12rem;
-  z-index: 1;
-}
-.announcement {
-  margin: 200px 0;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+.raptor {
+  top: 300px;
+  right: 0;
 }
 @media only screen and (max-width: 768px) {
-  .workVideo {
-    width: 325px;
-    margin-left: -162.5px;
+  .workText, .workTitle {
+    padding: 0 5px;
   }
-  .workText {
-    padding: 0 20px;
+  .video {
+    height: 150px;
+  }
+  .frenzy {
+    top: 75px;
+  }
+  .raptor {
+    top: 450px;
   }
 }
