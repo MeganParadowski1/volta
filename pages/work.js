@@ -1,5 +1,3 @@
-import { PositionalAudio } from "three";
-import Hoverable from "../components/Hoverable";
 import Layout from "../components/Layout";
 import styles from "../styles/Work.module.css";
 

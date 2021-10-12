@@ -1,4 +1,3 @@
-import Hoverable from "../components/Hoverable";
 import Layout from "../components/Layout";
 import styles from "../styles/Info.module.css";
 
