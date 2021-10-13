@@ -4,11 +4,6 @@ import { useEffect } from "react";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 
-import Router from "next/router";
-
-Router.events.on("routeChangeComplete", routeChange);
-Router.events.on("routeChangeStart", routeChange);
-
 const pageVariants = {
   pageInitial: {
     opacity: 0,

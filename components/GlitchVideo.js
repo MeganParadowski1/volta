@@ -7,7 +7,7 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { GlitchPass } from "three/examples/jsm/postprocessing/GlitchPass.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-export default function GlitchVideo() {
+export default function GlitchVideo({ doneLoading }) {
   useEffect(() => {
     const scene = new THREE.Scene();
     // const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
@@ -91,6 +91,9 @@ export default function GlitchVideo() {
     }
     window.addEventListener("resize", onWindowResize);
     window.addEventListener("mousemove", onMouseMove);
+    video.onloadeddata = () => {
+      doneLoading();
+    };
 
     return () => {
       cancelAnimationFrame(frame);

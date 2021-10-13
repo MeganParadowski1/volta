@@ -15,6 +15,9 @@
   font-weight: 900;
   font-size: 4rem;
 }
+.workTitle:hover {
+  color: #d79c98;
+}
 .workText {
   text-align: center;
   font-size: 16px;
