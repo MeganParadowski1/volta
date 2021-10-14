@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
-
+import { AnimatePresence, motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
@@ -15,13 +15,22 @@ export default function Home() {
   };
   return (
     <Layout>
-      {loading && (
-        <div className={styles.loading}>
-          <div className={styles.titleContainer}>
-            <img className={styles.logo} src="/volta_white_logo.png" />
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {loading && (
+          <motion.div
+            // initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className={styles.loading}
+          >
+            <div className={styles.titleContainer}>
+              <img className={styles.logo} src="/volta_white_logo.png" />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className={styles.titleContainer}>
         <img className={styles.logo} src="/volta_white_logo.png" />
         <div className={styles.subtitle}>collective</div>
