@@ -43,8 +43,14 @@
   top: 300px;
   right: 0;
 }
+
+.video {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
 @media only screen and (max-width: 768px) {
-  .workText, .workTitle {
+  .workText,
+  .workTitle {
     padding: 0 5px;
   }
   .video {

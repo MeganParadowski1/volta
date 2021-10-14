@@ -8,15 +8,19 @@ const GlitchVideo = dynamic(() => import("../components/GlitchVideo"), {
   ssr: false,
 });
 
+let firstLoad = true;
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const doneLoading = () => {
-    setLoading(false);
+    if (firstLoad) {
+      setLoading(false);
+      firstLoad = false;
+    }
   };
   return (
     <Layout>
       <AnimatePresence>
-        {loading && (
+        {loading && firstLoad && (
           <motion.div
             // initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
