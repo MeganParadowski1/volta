@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const GlitchVideo = dynamic(() => import("../components/GlitchVideo"), {
   ssr: false,
@@ -17,6 +17,43 @@ export default function Home() {
       firstLoad = false;
     }
   };
+  useEffect(() => {
+    if (firstLoad) {
+      console.log("what");
+      // document.addEventListener("DOMContentLoaded", function () {
+      var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+      console.log(lazyVideos);
+      if ("IntersectionObserver" in window) {
+        var lazyVideoObserver = new IntersectionObserver(function (
+          entries,
+          observer
+        ) {
+          entries.forEach(function (video) {
+            if (video.isIntersecting) {
+              for (var source in video.target.children) {
+                var videoSource = video.target.children[source];
+                if (
+                  typeof videoSource.tagName === "string" &&
+                  videoSource.tagName === "SOURCE"
+                ) {
+                  videoSource.src = videoSource.dataset.src;
+                }
+              }
+              video.target.load();
+              video.target.classList.remove("lazy");
+              lazyVideoObserver.unobserve(video.target);
+              video.target.style.display = "none";
+            }
+          });
+        });
+
+        lazyVideos.forEach(function (lazyVideo) {
+          lazyVideoObserver.observe(lazyVideo);
+        });
+      }
+      // });
+    }
+  }, []);
   return (
     <Layout>
       <AnimatePresence>
@@ -41,26 +78,12 @@ export default function Home() {
       </div>
       <GlitchVideo doneLoading={doneLoading} />
       <div className={styles.videoOverlay} />
-      <video
-        className={`${styles.video} ${styles.frenzy}`}
-        id="frenzy"
-        src="/volta.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline="False"
-        style={{ display: "none" }}
-      />
-      <video
-        className={`${styles.video} ${styles.raptor}`}
-        id="raptor"
-        src="/volta_cut_2.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline="False"
-        style={{ display: "none" }}
-      />
+      <video className="lazy" autoPlay muted loop playsInline>
+        <source data-src="/volta_cut_2.mp4" type="video/mp4" />
+      </video>
+      <video className="lazy" autoPlay muted loop playsInline>
+        <source data-src="/volta.mp4" type="video/mp4" />
+      </video>
     </Layout>
   );
 }
