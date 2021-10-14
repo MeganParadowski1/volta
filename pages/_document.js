@@ -5,8 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="preload" href="/email_icon_green.png" as="image" />
-          <link rel="preload" href="/vimeo-logo-green.png" as="image" />
+          <link rel="preload" href="/email_icon_blue.png" as="image" />
         </Head>
         <body>
           <Main />
