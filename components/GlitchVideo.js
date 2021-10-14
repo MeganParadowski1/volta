@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 
 import * as THREE from "three";

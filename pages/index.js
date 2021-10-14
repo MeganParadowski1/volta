@@ -28,6 +28,26 @@ export default function Home() {
       </div>
       <GlitchVideo doneLoading={doneLoading} />
       <div className={styles.videoOverlay} />
+      <video
+        className={`${styles.video} ${styles.frenzy}`}
+        id="frenzy"
+        src="/volta.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline="False"
+        style={{ display: "none" }}
+      />
+      <video
+        className={`${styles.video} ${styles.raptor}`}
+        id="raptor"
+        src="/volta_cut_2.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline="False"
+        style={{ display: "none" }}
+      />
     </Layout>
   );
 }
