@@ -22,7 +22,6 @@ export default function Home() {
       console.log("what");
       // document.addEventListener("DOMContentLoaded", function () {
       var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-      console.log(lazyVideos);
       if ("IntersectionObserver" in window) {
         var lazyVideoObserver = new IntersectionObserver(function (
           entries,
@@ -42,7 +41,6 @@ export default function Home() {
               video.target.load();
               video.target.classList.remove("lazy");
               lazyVideoObserver.unobserve(video.target);
-              video.target.style.display = "none";
             }
           });
         });
@@ -78,10 +76,24 @@ export default function Home() {
       </div>
       <GlitchVideo doneLoading={doneLoading} />
       <div className={styles.videoOverlay} />
-      <video className="lazy" autoPlay muted loop playsInline>
+      <video
+        style={{ display: "none" }}
+        className="lazy"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
         <source data-src="/volta_cut_2.mp4" type="video/mp4" />
       </video>
-      <video className="lazy" autoPlay muted loop playsInline>
+      <video
+        style={{ display: "none" }}
+        className="lazy"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
         <source data-src="/volta.mp4" type="video/mp4" />
       </video>
     </Layout>
