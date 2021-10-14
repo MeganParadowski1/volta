@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preload" href="/email_icon_green.png" as="image" />
           <link rel="preload" href="/vimeo-logo-green.png" as="image" />
-          <link rel="preload" href="/volta.mp4" as="video" />
         </Head>
         <body>
           <Main />

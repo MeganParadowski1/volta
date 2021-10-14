@@ -91,7 +91,7 @@ export default function GlitchVideo({ doneLoading }) {
     }
     window.addEventListener("resize", onWindowResize);
     window.addEventListener("mousemove", onMouseMove);
-    video.onloadeddata = () => {
+    video.oncanplay = () => {
       doneLoading();
     };
 
