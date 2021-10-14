@@ -15,7 +15,7 @@
 }
 
 .alternateNav {
-  color: darkslategray;
+  color: #024657;
 }
 .navbg {
   font-size: 44px;
@@ -32,7 +32,8 @@
 .topright {
   position: inherit;
   right: 3rem;
-  color: darkslategray;
+  color: #024657;
+  z-index: 1;
 }
 .toprightImg {
   height: 18px;
@@ -42,15 +43,18 @@
   position: inherit;
   right: 3rem;
   bottom: 3rem;
+  z-index: 1;
 }
 .topleft {
   position: inherit;
   left: 3rem;
+  z-index: 1;
 }
 .bottomleft {
   position: inherit;
   left: 3rem;
   bottom: 3rem;
+  z-index: 1;
 }
 .hovertext {
   position: absolute;

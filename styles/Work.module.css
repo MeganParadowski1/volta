@@ -1,5 +1,5 @@
 .workMain {
-  color: #cd5874;
+  color: #007d9b;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -16,7 +16,7 @@
   font-size: 4rem;
 }
 .workTitle:hover {
-  color: #d79c98;
+  color: #024657;
 }
 .workText {
   text-align: center;

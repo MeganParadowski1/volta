@@ -28,7 +28,7 @@ export default function Modal({ open, closeModal }) {
               </div>
               <div className={styles.modalTitle}>Say hello</div>
               <a href="mailto:info@voltacollective.com">
-                <img className={styles.modalImg} src="/email_icon_green.png" />
+                <img className={styles.modalImg} src="/email_icon_blue.png" />
               </a>
             </div>
           </div>

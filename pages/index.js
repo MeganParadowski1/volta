@@ -62,11 +62,7 @@ export default function Home() {
             // animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
             className={styles.loading}
-          >
-            <div className={styles.titleContainer}>
-              <img className={styles.logo} src="/volta_white_logo.png" />
-            </div>
-          </motion.div>
+          />
         )}
       </AnimatePresence>
 
