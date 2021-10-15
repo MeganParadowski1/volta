@@ -19,7 +19,7 @@ export default function Home() {
         {loading && (
           <motion.div
             exit={{ opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
             className={styles.loading}
           />
         )}
