@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 
 import * as THREE from "three";
@@ -7,7 +7,7 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { GlitchPass } from "three/examples/jsm/postprocessing/GlitchPass.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-export default function GlitchVideo() {
+export default function GlitchVideo({ doneLoading }) {
   useEffect(() => {
     const scene = new THREE.Scene();
     // const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
@@ -91,6 +91,9 @@ export default function GlitchVideo() {
     }
     window.addEventListener("resize", onWindowResize);
     window.addEventListener("mousemove", onMouseMove);
+    video.oncanplay = () => {
+      doneLoading();
+    };
 
     return () => {
       cancelAnimationFrame(frame);
@@ -115,8 +118,7 @@ export default function GlitchVideo() {
       <video
         id="video"
         className={styles.homeVideo}
-        // style={{ opacity: 0, width: 100, height: 100 }}
-        src="/volta.mp4"
+        src="/volta_perf.mp4"
         autoPlay
         loop
         muted

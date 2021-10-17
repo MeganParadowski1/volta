@@ -4,26 +4,6 @@ import { useEffect } from "react";
 import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 
-import Router from "next/router";
-
-const routeChange = () => {
-  // Temporary fix to avoid flash of unstyled content
-  // during route transitions. Keep an eye on this
-  // issue and remove this code when resolved:
-  // https://github.com/vercel/next.js/issues/17464
-
-  const tempFix = () => {
-    const allStyleElems = document.querySelectorAll('style[media="x"]');
-    allStyleElems.forEach((elem) => {
-      elem.removeAttribute("media");
-    });
-  };
-  tempFix();
-};
-
-Router.events.on("routeChangeComplete", routeChange);
-Router.events.on("routeChangeStart", routeChange);
-
 const pageVariants = {
   pageInitial: {
     opacity: 0,
@@ -45,6 +25,30 @@ const pageMotionProps = {
 };
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    Array.from(
+      document.querySelectorAll('head > link[rel="stylesheet"][data-n-p]')
+    ).forEach((node) => {
+      node.removeAttribute("data-n-p");
+    });
+    const mutationHandler = (mutations) => {
+      mutations.forEach(({ target }) => {
+        if (target.nodeName === "STYLE") {
+          if (target.getAttribute("media") === "x") {
+            target.removeAttribute("media");
+          }
+        }
+      });
+    };
+    const observer = new MutationObserver(mutationHandler);
+    observer.observe(document.head, {
+      subtree: true,
+      attributeFilter: ["media"],
+    });
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   const router = useRouter();
   const path = router.asPath;
   useEffect(() => {
@@ -56,13 +60,13 @@ function MyApp({ Component, pageProps }) {
   }, [path]);
   return (
     <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+      </Head>{" "}
       <AnimatePresence exitBeforeEnter>
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"
-          />
-        </Head>
         <motion.div
           key={router.route}
           {...pageMotionProps}
