@@ -26,7 +26,7 @@
   letter-spacing: 2px;
 }
 .block {
-  margin-top: 200px;
+  margin-top: 6rem;
 }
 .item {
   position: relative;
@@ -35,6 +35,8 @@
 .video {
   position: absolute;
   height: 225px;
+  opacity: 0;
+  transition: opacity 1000ms;
 }
 .frenzy {
   top: 100px;
@@ -43,11 +45,11 @@
   top: 300px;
   right: 0;
 }
-
-.video {
-  opacity: 0;
-  transition: opacity 1000ms;
+.bite {
+  bottom: 0;
+  left: 125px;
 }
+
 @media only screen and (max-width: 768px) {
   .workText,
   .workTitle {
@@ -61,5 +63,8 @@
   }
   .raptor {
     top: 450px;
+  }
+  .bite {
+    left: 50px;
   }
 }

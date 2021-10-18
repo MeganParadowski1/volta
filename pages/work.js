@@ -2,6 +2,24 @@ import { useEffect } from "react";
 import Layout from "../components/Layout";
 import styles from "../styles/Work.module.css";
 
+const works = [
+  {
+    title: '"Frenzy"',
+    text: "Debuted in Sizzle! Dance & Film Online Festival",
+    vimeo: "https://vimeo.com/616193285",
+  },
+  {
+    title: "VOLTA X teh Raptor",
+    text: "Live at the Lash Social in Los Angeles",
+    vimeo: "https://vimeo.com/629671033",
+  },
+  {
+    title: '"Bite"',
+    text: "Live at Sade gallery in Los Angeles",
+    vimeo: "",
+  },
+];
+
 export default function Work() {
   useEffect(() => {
     function loadVideo(video) {
@@ -15,8 +33,9 @@ export default function Work() {
 
     const video1 = document.getElementById("frenzy");
     const video2 = document.getElementById("raptor");
+    const video3 = document.getElementById("bite");
 
-    const videos = [video1, video2];
+    const videos = [video1, video2, video3];
     videos.forEach((video) => {
       if (video.readyState === 4) {
         video.style.opacity = "100%";
@@ -25,7 +44,8 @@ export default function Work() {
 
     const promise1 = loadVideo(video1);
     const promise2 = loadVideo(video2);
-    Promise.all([promise1, promise2]).then(() => {
+    const promise3 = loadVideo(video3);
+    Promise.all([promise1, promise2, promise3]).then(() => {
       // Do something when they are both loaded
     });
   }, []);
@@ -33,9 +53,18 @@ export default function Work() {
     <Layout>
       <div className={styles.workMain}>
         <video
+          id="bite"
+          className={`${styles.video} ${styles.bite}`}
+          src="/bite_clip.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline="False"
+        />
+        <video
           id="frenzy"
           className={`${styles.video} ${styles.frenzy}`}
-          src="/volta.mp4"
+          src="/frenzy_clip.mp4"
           autoPlay
           loop
           muted
@@ -44,29 +73,21 @@ export default function Work() {
         <video
           id="raptor"
           className={`${styles.video} ${styles.raptor}`}
-          src="/volta_cut_2.mp4"
+          src="/raptor_clip.mp4"
           autoPlay
           loop
           muted
           playsInline="False"
         />
         <div className={styles.block}>
-          <div className={styles.item}>
-            <a href="https://vimeo.com/616193285" target="_blank">
-              <div className={styles.workTitle}>"Frenzy"</div>
-            </a>
-            <div className={styles.workText}>
-              Debuted in Sizzle! Dance & Film Online Festival
+          {works.map((work) => (
+            <div className={styles.item}>
+              <a href={work.vimeo} target="_blank">
+                <div className={styles.workTitle}>{work.title}</div>
+              </a>
+              <div className={styles.workText}>{work.text}</div>
             </div>
-          </div>
-          <div className={styles.item}>
-            <a href="https://vimeo.com/629671033" target="_blank">
-              <div className={styles.workTitle}>VOLTA X teh Raptor</div>
-              <div className={styles.workText}>
-                Live at the Lash Social in Los Angeles
-              </div>
-            </a>
-          </div>
+          ))}
         </div>
       </div>
     </Layout>
