@@ -41,16 +41,6 @@ export default function Home() {
       >
         <source data-src="/volta_cut_2.mp4" type="video/mp4" />
       </video>
-      <video
-        style={{ display: "none" }}
-        className="lazy"
-        autoPlay
-        muted
-        loop
-        playsInline
-      >
-        <source data-src="/volta.mp4" type="video/mp4" />
-      </video>
     </Layout>
   );
 }

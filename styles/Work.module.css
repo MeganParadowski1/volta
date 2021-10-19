@@ -32,6 +32,12 @@
   position: relative;
   margin-bottom: 50px;
 }
+.img {
+  position: absolute;
+  height: 225px;
+  opacity: 80%;
+  filter: drop-shadow(8px 8px 10px #024657);
+}
 .video {
   position: absolute;
   height: 225px;
@@ -55,14 +61,15 @@
   .workTitle {
     padding: 0 5px;
   }
-  .video {
+  .img {
     height: 150px;
+    opacity: 50%;
   }
   .frenzy {
     top: 75px;
   }
   .raptor {
-    top: 450px;
+    top: 350px;
   }
   .bite {
     left: 50px;

@@ -16,7 +16,7 @@ const works = [
   {
     title: '"Bite"',
     text: "Live at Sade gallery in Los Angeles",
-    vimeo: "",
+    vimeo: "https://vimeo.com/voltacollective",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Work() {
     const videos = [video1, video2, video3];
     videos.forEach((video) => {
       if (video.readyState === 4) {
-        video.style.opacity = "100%";
+        video.style.opacity = "60%";
       }
     });
 
@@ -46,38 +46,27 @@ export default function Work() {
     const promise2 = loadVideo(video2);
     const promise3 = loadVideo(video3);
     Promise.all([promise1, promise2, promise3]).then(() => {
-      // Do something when they are both loaded
+      // Do something when they are all loaded
     });
   }, []);
   return (
     <Layout>
       <div className={styles.workMain}>
-        <video
+        <div className={styles.videoOverlay} />
+        <img
           id="bite"
-          className={`${styles.video} ${styles.bite}`}
-          src="/bite_clip.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline="False"
+          className={`${styles.img} ${styles.bite}`}
+          src="/photo-37.jpg"
         />
-        <video
+        <img
           id="frenzy"
-          className={`${styles.video} ${styles.frenzy}`}
-          src="/frenzy_clip.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline="False"
+          className={`${styles.img} ${styles.frenzy}`}
+          src="/frenzy2.png"
         />
-        <video
+        <img
           id="raptor"
-          className={`${styles.video} ${styles.raptor}`}
-          src="/raptor_clip.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline="False"
+          className={`${styles.img} ${styles.raptor}`}
+          src="/voltaxraptor.jpg"
         />
         <div className={styles.block}>
           {works.map((work) => (
