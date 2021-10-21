@@ -1,11 +1,11 @@
 .workMain {
-  color: #007d9b;
   height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1;
+  color: #544953;
 }
 .workTitle {
   text-align: center;
@@ -14,9 +14,6 @@
   letter-spacing: 2px;
   font-weight: 900;
   font-size: 4rem;
-}
-.workTitle:hover {
-  color: #024657;
 }
 .workText {
   text-align: center;
@@ -36,7 +33,6 @@
   position: absolute;
   height: 225px;
   opacity: 80%;
-  filter: drop-shadow(8px 8px 10px #024657);
 }
 .video {
   position: absolute;

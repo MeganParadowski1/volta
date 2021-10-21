@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <Head>
         <title>VOLTA</title>
         <meta name="description" content="Volta Collective" />
-        <link rel="icon" href="/favicon2.png" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossrigin />
         <link

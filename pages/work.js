@@ -15,44 +15,44 @@ const works = [
   },
   {
     title: '"Bite"',
-    text: "Live at Sade gallery in Los Angeles",
+    text: "Live at Gallery Sade in Los Angeles",
     vimeo: "https://vimeo.com/voltacollective",
   },
 ];
 
 export default function Work() {
-  useEffect(() => {
-    function loadVideo(video) {
-      return new Promise((resolve) => {
-        video.onloadeddata = () => {
-          resolve(true);
-          video.style.opacity = "100%";
-        };
-      });
-    }
+  // useEffect(() => {
+  //   function loadVideo(video) {
+  //     return new Promise((resolve) => {
+  //       video.onloadeddata = () => {
+  //         resolve(true);
+  //         video.style.opacity = "100%";
+  //       };
+  //     });
+  //   }
 
-    const video1 = document.getElementById("frenzy");
-    const video2 = document.getElementById("raptor");
-    const video3 = document.getElementById("bite");
+  //   const video1 = document.getElementById("frenzy");
+  //   const video2 = document.getElementById("raptor");
+  //   const video3 = document.getElementById("bite");
 
-    const videos = [video1, video2, video3];
-    videos.forEach((video) => {
-      if (video.readyState === 4) {
-        video.style.opacity = "60%";
-      }
-    });
+  //   const videos = [video1, video2, video3];
+  //   videos.forEach((video) => {
+  //     if (video.readyState === 4) {
+  //       video.style.opacity = "60%";
+  //     }
+  //   });
 
-    const promise1 = loadVideo(video1);
-    const promise2 = loadVideo(video2);
-    const promise3 = loadVideo(video3);
-    Promise.all([promise1, promise2, promise3]).then(() => {
-      // Do something when they are all loaded
-    });
-  }, []);
+  //   const promise1 = loadVideo(video1);
+  //   const promise2 = loadVideo(video2);
+  //   const promise3 = loadVideo(video3);
+  //   Promise.all([promise1, promise2, promise3]).then(() => {
+  //     // Do something when they are all loaded
+  //   });
+  // }, []);
   return (
     <Layout>
       <div className={styles.workMain}>
-        <div className={styles.videoOverlay} />
+        {/* <div className={styles.videoOverlay} />
         <img
           id="bite"
           className={`${styles.img} ${styles.bite}`}
@@ -67,7 +67,7 @@ export default function Work() {
           id="raptor"
           className={`${styles.img} ${styles.raptor}`}
           src="/voltaxraptor.jpg"
-        />
+        /> */}
         <div className={styles.block}>
           {works.map((work) => (
             <div className={styles.item}>
