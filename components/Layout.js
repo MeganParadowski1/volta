@@ -15,6 +15,11 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&family=Montserrat:wght@200;300;400;600&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link rel="stylesheet" href="https://use.typekit.net/uyy5sgw.css" />
       </Head>
       <Nav />
       {children}
