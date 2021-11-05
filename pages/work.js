@@ -6,7 +6,7 @@ const works = [
   {
     title: '"BITE"',
     text1: "Live at Gallery Sade in Los Angeles",
-    text2: "Choreographed and performed by Megan Paradowski and Mamie Green",
+    text2: "Choreographed and performed by Mamie Green and Megan Paradowski",
     text3: "Live music by Ariel Klevecz",
     vimeo: "https://vimeo.com/641693637",
     thumbnail: "Bite.png",
@@ -14,7 +14,7 @@ const works = [
   {
     title: '"Frenzy"',
     text1: "Debuted in Sizzle! Dance & Film Online Festival",
-    text2: "Choreographed and performed by Megan Paradowski and Mamie Green",
+    text2: "Choreographed and performed by Mamie Green and Megan Paradowski",
     text3: "Shot by Ariel Klevecz",
     vimeo: "https://vimeo.com/616193285",
     thumbnail: "Frenzy.png",
@@ -23,7 +23,7 @@ const works = [
     title: "VOLTA X teh Raptor",
     text1: "Live at the Lash Social in Los Angeles",
     text2:
-      "Created and performed by Megan Paradowski, Mamie Green, and teh Raptor",
+      "Created and performed by Mamie Green, Megan Paradowski, and teh Raptor",
     text3: "Captured by audience members",
     vimeo: "https://vimeo.com/629671033",
     thumbnail: "Raptor.png",
