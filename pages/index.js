@@ -24,7 +24,9 @@ export default function Home() {
           />
         )}
       </AnimatePresence>
-
+      <div className={styles.infoBlurb}>
+        A dance theatre company directed by Megan Paradowski & Mamie Green
+      </div>
       <div className={styles.titleContainer}>
         <img className={styles.logo} src="/volta_white_logo.png" />
         <div className={styles.subtitle}>collective</div>
@@ -39,7 +41,7 @@ export default function Home() {
         loop
         playsInline
       >
-        <source data-src="/volta_cut_2.mp4" type="video/mp4" />
+        <source data-src="/IMG_8344.mp4" type="video/mp4" />
       </video>
       <video
         style={{ display: "none" }}
@@ -49,7 +51,7 @@ export default function Home() {
         loop
         playsInline
       >
-        <source data-src="/volta.mp4" type="video/mp4" />
+        <source data-src="/IMG_8344.mp4" type="video/mp4" />
       </video>
     </Layout>
   );
