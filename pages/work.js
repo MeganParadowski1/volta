@@ -28,6 +28,31 @@ const works = [
     vimeo: "https://vimeo.com/629671033",
     thumbnail: "Raptor.png",
   },
+  {
+    title: '"MILIEU"',
+    text1: "Live at the Lash Social in Los Angeles",
+    text2:
+      "Created and performed by Mamie Green and Megan Paradowski with sound by teh Raptor",
+    text3: "Captured by Brenton Cooper",
+    vimeo: "https://vimeo.com/658669181",
+    thumbnail: "Milieu.png",
+  },
+  {
+    title: "",
+    text1: "",
+    text2: "",
+    text3: "",
+    vimeo: "",
+    thumbnail: "",
+  },
+  {
+    title: "",
+    text1: "",
+    text2: "",
+    text3: "",
+    vimeo: "",
+    thumbnail: "",
+  },
 ];
 
 export default function Work() {
