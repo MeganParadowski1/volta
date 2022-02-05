@@ -1,0 +1,79 @@
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  background-color: #f7f5ee;
+  bottom: 50px;
+  left: 100px;
+  border-radius: 30px;
+  padding: 38px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 46px;
+  font-weight: 900;
+  text-align: center;
+  z-index: 3;
+  letter-spacing: 1px;
+  color: #007d9b;
+}
+.exit {
+  font-size: 21px;
+  font-weight: 100;
+  position: absolute;
+  right: 24px;
+  top: 19px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  color: #024657;
+}
+.title {
+  font-size: 32px;
+}
+.text {
+  color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 10px 0;
+  letter-spacing: 3px;
+}
+.subtext {
+  color: black;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.ticketLink {
+  color: white;
+  background-color: #007d9b;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.modalExpand {
+  animation: expand 0.5s;
+}
+.modalRetract {
+  animation: retract 0.5s;
+}
+@keyframes expand {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes retract {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

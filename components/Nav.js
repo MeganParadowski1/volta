@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../styles/Nav.module.css";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import Popup from "./Popup";
 
 const paths = {
   "/info": "02",
@@ -12,17 +13,10 @@ const homePath = "/";
 
 export default function Nav({ props }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(true);
 
   const closeModal = () => setIsModalOpen(false);
-
-  var popup = (
-    <div className={styles.hovertext}>
-      <div className={styles.hoveritem}>Say hello :-)</div>
-      <a className={styles.hoveritem} href="mailto:volta@email.com">
-        volta@email.com
-      </a>
-    </div>
-  );
+  const closePopup = () => setIsPopupOpen(false);
 
   const router = useRouter();
   let path = router.asPath;
@@ -62,6 +56,7 @@ export default function Nav({ props }) {
           </a>
         </div>
         <Modal open={isModalOpen} closeModal={closeModal} />
+        <Popup open={isPopupOpen} closePopup={closePopup} />
       </div>
     );
   }
