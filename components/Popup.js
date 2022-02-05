@@ -31,7 +31,7 @@ export default function Popup({ open, closePopup }) {
               An in-person, immersive performance in MONA's galleries
             </div>
             <button
-              style={{ width: 120, margin: "10px auto" }}
+              style={{ width: 120, margin: "auto" }}
               onClick={() =>
                 window.open("https://www.inliquidlight.info", "_blank")
               }
