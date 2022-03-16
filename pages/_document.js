@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preload" href="/email_icon_blue.png" as="image" />
+          <script id="mcjs" src="mailchimp.js" />
         </Head>
         <body>
           <Main />
