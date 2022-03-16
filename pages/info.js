@@ -8,14 +8,12 @@ export default function Info() {
         <div className={styles.infoMain}>
           <div className={styles.pageTitle}>Hi, we're Volta</div>
           <div className={styles.infoText}>
-            Directed by Mamie Green and Megan Paradowski, Volta is a dance
-            theatre company that aims to fuse physicality, theatricality and a
-            multidisciplinary approach to creation and performance. Both Mamie
-            and Megan believe that the body is the most honest and singular mode
-            of communication and expression. We believe that by using the body,
-            we can take the experience of being human and convey these shared
-            feelings to an audience. For Volta, art is a means of communication;
-            communal anger, joy, fear, and love that connects us all.
+            Directed by Mamie Green and Megan Paradowski, Volta fuses
+            physicality, theatricality and multidisciplinary approaches to
+            performance. Volta is passionate about presenting dance in
+            accessible, nontraditional spaces, often collaborating with artists
+            across mediums. Volta's work expresses the communal rage, wonder,
+            and love that connects us all.
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ export default function Nav({ props }) {
         </div>
         <div className={`${styles.bottomleft} ${styles.navbg}`}>02</div>
         <Link href="/info">
-          <a className={styles.bottomleft}>Info</a>
+          <a className={styles.bottomleft}>About</a>
         </Link>
         <div className={`${styles.bottomright} ${styles.navbg}`}>03</div>
         <Link href="/work">
