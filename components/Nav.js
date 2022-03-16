@@ -56,7 +56,7 @@ export default function Nav({ props }) {
           </a>
         </div>
         <Modal open={isModalOpen} closeModal={closeModal} />
-        <Popup open={isPopupOpen} closePopup={closePopup} />
+        {/* <Popup open={isPopupOpen} closePopup={closePopup} /> */}
       </div>
     );
   }
