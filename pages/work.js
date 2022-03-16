@@ -4,6 +4,15 @@ import styles from "../styles/Work.module.css";
 
 const works = [
   {
+    title: '"In Liquid Light"',
+    text1: "Live at the Museum of Modern Art in Los Angeles",
+    text2:
+      "Choreography by Mamie Green and Megan Paradowski, in collaboration with the dancers",
+    text3: "",
+    vimeo: "https://vimeo.com/689043359",
+    thumbnail: "ILL.png",
+  },
+  {
     title: '"BITE"',
     text1: "Live at Gallery Sade in Los Angeles",
     text2: "Choreographed and performed by Mamie Green and Megan Paradowski",
@@ -36,14 +45,6 @@ const works = [
     text3: "Captured by Brenton Cooper",
     vimeo: "https://vimeo.com/658669181",
     thumbnail: "Milieu.png",
-  },
-  {
-    title: "",
-    text1: "",
-    text2: "",
-    text3: "",
-    vimeo: "",
-    thumbnail: "",
   },
   {
     title: "",
