@@ -3,7 +3,6 @@
   padding: 3rem 3rem;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 10px;
   color: white;
@@ -12,6 +11,7 @@
 
 .nav a {
   z-index: 2;
+  cursor: pointer;
 }
 
 .alternateNav {
@@ -38,6 +38,9 @@
 .toprightImg {
   height: 18px;
   margin-left: 10px;
+}
+.iconLink {
+  cursor: pointer;
 }
 .bottomright {
   position: inherit;
