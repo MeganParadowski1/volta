@@ -81,10 +81,13 @@
 }
 @media only screen and (max-width: 768px) {
   .nav {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
   .topleft {
     margin-right: 2rem;
+  }
+  .alternateNav {
+    left: 2rem;
   }
   .bottomleft {
     bottom: 2rem;
