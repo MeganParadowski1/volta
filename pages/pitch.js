@@ -10,6 +10,13 @@ export default function Pitch() {
           <a href="https://jeanettarich.cargo.site/About" target="_blank">
             More about Jeanetta Rich
           </a>
+          <a
+            href="https://artandolfaction.com/"
+            target="_blank"
+            style={{ display: "block", paddingTop: "20px" }}
+          >
+            More about the Institute of Art and Olfaction
+          </a>
         </div>
       </div>
     </Layout>
