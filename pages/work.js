@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import styles from "../styles/Work.module.css";
 
@@ -59,7 +60,7 @@ const works = [
 export default function Work() {
   return (
     <Layout>
-      <div className={styles.title}>Featured works X VOLTA</div>
+      <div className={styles.title}>Featured Works</div>
 
       <div className={styles.workMain}>
         <div className={styles.workBlock}>
@@ -76,6 +77,7 @@ export default function Work() {
           ))}
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 }

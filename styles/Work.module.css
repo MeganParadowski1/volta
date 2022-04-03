@@ -1,6 +1,6 @@
 .workMain {
   z-index: 1;
-  padding: 5rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
 }
@@ -14,7 +14,7 @@
 .workTitle {
   font-weight: 900;
   font-family: "Bodoni Moda", serif;
-  color: #007d9b;
+  color: #405353;
   font-size: 28px;
 }
 .workText {
@@ -46,7 +46,8 @@
   letter-spacing: 2px;
   font-weight: 900;
   font-size: 3rem;
-  color: #007d9b;
+  color: #405353;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
   .item {

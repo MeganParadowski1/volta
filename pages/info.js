@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import styles from "../styles/Info.module.css";
 
@@ -48,6 +49,7 @@ export default function Info() {
           ))}
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 }

@@ -4,7 +4,7 @@
   align-items: center;
 }
 .infoMain {
-  color: #007d9b;
+  color: #405353;
   max-width: 600px;
   padding-top: 10rem;
 }
@@ -22,6 +22,7 @@
   font-weight: 900;
   font-size: 3rem;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 .photo {
   position: absolute;
@@ -33,7 +34,7 @@
 }
 .reviews {
   width: 100%;
-  background-color: #007d9b;
+  background-color: #405353;
   color: white;
   padding-bottom: 40px;
 }

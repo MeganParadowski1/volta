@@ -1,0 +1,57 @@
+.footer {
+  background-color: white;
+  padding: 5rem;
+  width: 100%;
+  display: flex;
+}
+.footerColumn {
+  flex: 0 0 33.333%;
+}
+.footerTitle {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #405353;
+  padding-bottom: 10px;
+}
+.footerLink {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 20px;
+}
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.footer button {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background-color: #405353;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
+@media (max-width: 1000px) {
+  .footer {
+    display: block;
+    padding: 3rem 2rem;
+  }
+  .footerColumn {
+    flex: unset;
+  }
+  .footerTitle {
+    font-size: 32px;
+  }
+  .buttonWrapper {
+    padding-top: 40px;
+  }
+}
