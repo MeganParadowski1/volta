@@ -16,7 +16,7 @@
   text-align: center;
   z-index: 3;
   letter-spacing: 1px;
-  color: #007d9b;
+  color: #4a6a78;
 }
 .exit {
   font-size: 21px;
@@ -26,7 +26,7 @@
   top: 19px;
   cursor: pointer;
   font-family: "Montserrat";
-  color: #024657;
+  color: #2f4752;
 }
 .title {
   font-size: 32px;
@@ -49,7 +49,7 @@
 }
 .ticketLink {
   color: white;
-  background-color: #007d9b;
+  background-color: #4a6a78;
   border: none;
   padding: 10px;
   border-radius: 2px;

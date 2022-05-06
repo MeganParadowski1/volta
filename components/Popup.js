@@ -25,15 +25,13 @@ export default function Popup({ open, closePopup }) {
             <div className={styles.exit} onClick={closePopup}>
               X
             </div>
-            <div className={styles.title}>VOLTA X Museum of Neon Art</div>
-            <div className={styles.text}>March 3rd to 6th</div>
-            <div className={styles.subtext}>
-              An in-person, immersive performance in MONA's galleries
-            </div>
+            <div className={styles.title}>VOLTA X Peter Kalisch: Backwash</div>
+            <div className={styles.text}>June 12</div>
+            <div className={styles.subtext}>Navel LA</div>
             <button
               style={{ width: 120, margin: "auto" }}
               onClick={() =>
-                window.open("https://www.inliquidlight.info", "_blank")
+                window.open("https://tickets.voltacollective.com", "_blank")
               }
               className={styles.ticketLink}
             >
