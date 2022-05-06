@@ -60,8 +60,27 @@ const works = [
 export default function Work() {
   return (
     <Layout>
+      <div className={styles.title}>Upcoming</div>
+      <div className={styles.workMain}>
+        <div className={styles.workBlock}>
+          <div className={styles.item}>
+            <a href="" target="_blank">
+              <img src="/backwash.png" />
+              <div className={styles.workTitle}>Backwash</div>
+              <div className={styles.workText}>June 12, 8PM</div>
+              <div className={styles.workText}>Navel LA</div>
+              <a
+                href="http://tickets.voltacollective.com"
+                target="_blank"
+                style={{ color: "red", marginTop: "10px" }}
+              >
+                BUY TICKETS
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
       <div className={styles.title}>Featured Works</div>
-
       <div className={styles.workMain}>
         <div className={styles.workBlock}>
           {works.map((work) => (
