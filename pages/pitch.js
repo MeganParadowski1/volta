@@ -5,7 +5,7 @@ export default function Pitch() {
   return (
     <Layout>
       <div className={styles.container}>
-        <img className={styles.pitch} src="Mythology Pitch.png" />
+        <img className={styles.pitch} src="Mythology Pitch3.png" />
         <div className={styles.subtext}>
           <a href="https://jeanettarich.cargo.site/About" target="_blank">
             More about Jeanetta Rich
@@ -16,6 +16,13 @@ export default function Pitch() {
             style={{ display: "block", paddingTop: "20px" }}
           >
             More about the Institute of Art and Olfaction
+          </a>
+          <a
+            href="https://www.melissaachten.com/"
+            target="_blank"
+            style={{ display: "block", paddingTop: "20px" }}
+          >
+            More about Melissa Achten
           </a>
         </div>
       </div>
