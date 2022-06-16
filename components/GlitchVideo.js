@@ -118,7 +118,7 @@ export default function GlitchVideo({ doneLoading }) {
       <video
         id="video"
         className={styles.homeVideo}
-        src="/volta_reel.mp4"
+        src="/backwash.mp4 "
         autoPlay
         loop
         muted
