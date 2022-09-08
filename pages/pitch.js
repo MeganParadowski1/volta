@@ -6,10 +6,10 @@ export default function Pitch() {
   return (
     <Layout>
       <div className={styles.container}>
-        <img className={styles.pitch} src="MythologyPitchJeanetta.png" />
+        <img className={styles.pitch} src="MythologyPitchAlexis.png" />
         <div className={styles.subtext}>
-          <a href="https://jeanettarich.cargo.site/About" target="_blank">
-            More about Jeanetta Rich
+          <a href="https://www.alexisokeowo.com/" target="_blank">
+            More about Alexis Okeowo
           </a>
           <a
             href="https://artandolfaction.com/"
