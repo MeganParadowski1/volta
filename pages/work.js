@@ -61,15 +61,17 @@ const works = [
 export default function Work() {
   return (
     <Layout>
-      {/* <div className={styles.title}>Upcoming</div> */}
-      {/* <div className={styles.workMain}>
+      <div className={styles.title}>Upcoming</div>
+      <div className={styles.workMain}>
         <div className={styles.workBlock}>
           <div className={styles.item}>
             <a href="" target="_blank">
-              <img src="/backwash.png" />
-              <div className={styles.workTitle}>Backwash</div>
-              <div className={styles.workText}>June 12, 8PM</div>
-              <div className={styles.workText}>Navel LA</div>
+              <img src="/olfactionHeaderImg.png" />
+              <div className={styles.workTitle}>MILK</div>
+              <div className={styles.workText}>Nov 10-12, 2022 | 6PM</div>
+              <div className={styles.workText}>
+                Institute of Art and Olfaction
+              </div>
               <a
                 href="http://tickets.voltacollective.com"
                 target="_blank"
@@ -80,7 +82,7 @@ export default function Work() {
             </a>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className={styles.title}>Featured Works</div>
       <div className={styles.workMain}>
         <div className={styles.workBlock}>
