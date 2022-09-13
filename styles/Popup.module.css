@@ -1,9 +1,10 @@
 .popup {
+  cursor: default;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  height: 350px;
   position: absolute;
   background-color: #f7f5ee;
   bottom: 50px;

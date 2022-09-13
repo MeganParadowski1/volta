@@ -25,9 +25,11 @@ export default function Popup({ open, closePopup }) {
             <div className={styles.exit} onClick={closePopup}>
               X
             </div>
-            <div className={styles.title}>VOLTA X Peter Kalisch: Backwash</div>
-            <div className={styles.text}>June 12</div>
-            <div className={styles.subtext}>Navel LA</div>
+            <div className={styles.title}>
+              VOLTA X Institute of Art and Olfaction: MILK
+            </div>
+            <div className={styles.text}>Nov 10-12, 2022</div>
+            <div className={styles.subtext}>Institute of Art and Olfaction</div>
             <button
               style={{ width: 120, margin: "auto" }}
               onClick={() =>
