@@ -20,13 +20,13 @@ export default function Footer() {
           <img src="/web-simple.jpeg" />
         </a>
       </div>
-      <div className={styles.buttonWrapper}>
+      {/* <div className={styles.buttonWrapper}>
         <button>
           <a target="_blank" href="http://eepurl.com/hXmbYz">
             Join our mailing list
           </a>
         </button>
-      </div>
+      </div> */}
     </footer>
   );
 }

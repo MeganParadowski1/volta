@@ -8,7 +8,7 @@ import Popup from "./Popup";
 const paths = {
   "/info": "01",
   "/work": "02",
-  "/pitch": "03",
+  "/upcoming": "03",
 };
 const homePath = "/";
 
@@ -46,7 +46,7 @@ export default function Nav({ props }) {
           <a className={styles.bottomleft}>Work</a>
         </Link>
         <div className={`${styles.bottomright} ${styles.navbg}`}>03</div>
-        <Link href="/pitch">
+        <Link href="/upcoming">
           <a className={styles.bottomright}>Upcoming</a>
         </Link>
         <div className={styles.topright}>

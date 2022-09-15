@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   width: 100%;
@@ -24,4 +28,20 @@ a {
 }
 #__next {
   height: 100%;
+}
+.title {
+  padding-top: 6rem;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #405353;
+  /* text-transform: uppercase; */
+}
+.subtitle {
+  font-weight: 900;
+  font-family: "Bodoni Moda", serif;
+  color: #405353;
+  font-size: 28px;
 }
