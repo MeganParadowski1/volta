@@ -32,7 +32,7 @@ const events = [
     time: "7:30pm",
     location: "Wallichs Theatre",
     linkText: "Buy tickets",
-    link: "",
+    link: "https://www.eventbrite.com/e/volta-dance-collective-bite-ii-tickets-410698047917",
   },
 ];
 
@@ -56,6 +56,13 @@ export default function Redlands() {
               <div className="w-full text-left">
                 <div className="uppercase font-medium">{event.date}</div>
                 <div className="font-thin">{event.title}</div>
+                {event.link && (
+                  <button className="text-white bg-black px-4 py-2 mt-2 text-sm">
+                    <a href={event.link} target="_blank">
+                      {event.linkText}
+                    </a>
+                  </button>
+                )}
               </div>
               <div className="w-full text-right">
                 <div className="uppercase">{event.time}</div>
