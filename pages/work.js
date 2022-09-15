@@ -68,7 +68,7 @@ export default function Work() {
             <div className={styles.item}>
               <a href={work.vimeo} target="_blank">
                 <img src={work.thumbnail} />
-                <div className={styles.workTitle}>{work.title}</div>
+                <div className="subtitle py-4">{work.title}</div>
                 <div className={styles.workText}>{work.text1}</div>
                 <div className={styles.workSubtext}>{work.text2}</div>
                 <div className={styles.workSubtext}>{work.text3}</div>

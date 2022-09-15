@@ -6,14 +6,11 @@
   width: 450px;
   height: 350px;
   position: absolute;
-  background-color: #f7f5ee;
+  background-color: white;
   bottom: 50px;
   left: 100px;
   border-radius: 30px;
   padding: 38px;
-  font-family: "Bodoni Moda", serif;
-  font-size: 46px;
-  font-weight: 900;
   text-align: center;
   z-index: 3;
   letter-spacing: 1px;
@@ -31,6 +28,7 @@
 }
 .title {
   font-size: 32px;
+  font-family: "Bodoni Moda", serif;
 }
 .text {
   color: black;

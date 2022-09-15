@@ -49,7 +49,7 @@ export default function Nav({ props }) {
         <Link href="/upcoming">
           <a className={styles.bottomright}>Upcoming</a>
         </Link>
-        <div className={styles.topright}>
+        <div className="absolute md:right-12 right-8 flex">
           <a
             href="https://www.instagram.com/volta_collective/"
             target="_blank"

@@ -31,11 +31,10 @@ export default function Popup({ open, closePopup }) {
             <div className={styles.text}>Nov 10-12, 2022</div>
             <div className={styles.subtext}>Institute of Art and Olfaction</div>
             <button
-              style={{ width: 120, margin: "auto" }}
+              className="m-auto text-white bg-[#4a6a78] px-4 py-2"
               onClick={() =>
                 window.open("https://tickets.voltacollective.com", "_blank")
               }
-              className={styles.ticketLink}
             >
               Buy Tickets
             </button>

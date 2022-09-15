@@ -33,14 +33,11 @@ a {
   padding-top: 6rem;
   text-align: center;
   font-family: "Bodoni Moda", serif;
-  letter-spacing: 2px;
-  font-weight: 900;
+  letter-spacing: 1px;
   font-size: 3rem;
   color: #405353;
-  /* text-transform: uppercase; */
 }
 .subtitle {
-  font-weight: 900;
   font-family: "Bodoni Moda", serif;
   color: #405353;
   font-size: 28px;
