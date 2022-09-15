@@ -6,14 +6,13 @@
 .infoMain {
   color: #405353;
   max-width: 600px;
-  padding-top: 10rem;
 }
 .infoText {
   font-size: 16px;
   font-weight: 300;
   line-height: 2;
   letter-spacing: 2px;
-  padding-bottom: 100px;
+  padding: 2rem 0 100px 0;
   overflow: auto;
 }
 .pageTitle {

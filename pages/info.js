@@ -26,7 +26,7 @@ export default function Info() {
     <Layout>
       <div className={styles.content}>
         <div className={styles.infoMain}>
-          <div className={styles.pageTitle}>About Volta</div>
+          <div className="title">About VOLTA</div>
           <div className={styles.infoText}>
             Directed by Mamie Green and Megan Paradowski, Volta fuses
             physicality, theatricality and multidisciplinary approaches to
@@ -37,7 +37,9 @@ export default function Info() {
           </div>
         </div>
         <div className={styles.reviews}>
-          <div className={styles.reviewTitle}>Recognition</div>
+          <div className="title !text-white !text-left !py-4 ml-8">
+            Recognition
+          </div>
           {quotes.map((quote) => (
             <div>
               <div className={styles.line} />
