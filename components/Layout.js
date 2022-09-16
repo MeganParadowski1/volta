@@ -6,8 +6,18 @@ export default function Layout({ children }) {
   return (
     <div className={styles.main}>
       <Head>
-        <title>VOLTA</title>
-        <meta name="description" content="Volta Collective" />
+        <title>Volta Collective</title>
+        <meta
+          name="description"
+          content="A Los Angeles based dance theatre company"
+        />
+        <meta property="og:title" content="Volta Collective" key="ogtitle" />
+        <meta
+          property="og:description"
+          content="A Los Angeles based dance theatre company"
+          key="ogdesc"
+        />
+        <meta property="og:image" content="/backwashpaige.png" />
         <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossrigin />
