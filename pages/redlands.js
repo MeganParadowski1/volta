@@ -17,13 +17,7 @@ const events = [
   {
     date: "Thursday 10/13",
     title: "Open company class",
-    time: "12:30-2pm",
-    location: "Wallichs Theatre",
-  },
-  {
-    date: "Thursday 10/13",
-    title: "Open rehearsal followed by Q&A",
-    time: "2-6pm",
+    time: "4:30-6pm",
     location: "Wallichs Theatre",
   },
   {
