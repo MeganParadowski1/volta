@@ -19,14 +19,6 @@ const works = [
     link: "http://tickets.voltacollective.com",
     thumbnail: "/milk.png",
   },
-  {
-    title: "",
-    text1: "",
-    text2: "",
-    linkText: "",
-    link: "",
-    thumbnail: "",
-  },
 ];
 
 export default function Upcoming() {
@@ -41,13 +33,11 @@ export default function Upcoming() {
               <div className="subtitle py-4">{work.title}</div>
               <div className={styles.workText}>{work.text1}</div>
               <div className={styles.workText}>{work.text2}</div>
-              <a
-                style={{ textDecoration: "underline" }}
-                href={work.link}
-                target="_blank"
-              >
-                {work.linkText}
-              </a>
+              <button className="text-white bg-black px-4 py-2 mt-2 text-sm">
+                <a href={work.link} target="_blank">
+                  {work.linkText}
+                </a>
+              </button>
             </div>
           ))}
         </div>
