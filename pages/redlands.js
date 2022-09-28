@@ -51,11 +51,11 @@ export default function Redlands() {
                 <div className="uppercase font-medium">{event.date}</div>
                 <div className="font-thin">{event.title}</div>
                 {event.link && (
-                  <button className="text-white bg-black px-4 py-2 mt-2 text-sm">
-                    <a href={event.link} target="_blank">
+                  <a href={event.link} target="_blank">
+                    <button className="text-white bg-black px-4 py-2 mt-2 text-sm">
                       {event.linkText}
-                    </a>
-                  </button>
+                    </button>
+                  </a>
                 )}
               </div>
               <div className="w-full text-right">
