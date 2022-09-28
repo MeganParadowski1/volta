@@ -47,7 +47,7 @@ export default function Redlands() {
               key={event}
               className="flex border-b-[1px] border-[hsla(0,0%,51%,.15)] py-4"
             >
-              <div className="w-full text-left">
+              <div className="w-full text-left z-10">
                 <div className="uppercase font-medium">{event.date}</div>
                 <div className="font-thin">{event.title}</div>
                 {event.link && (
