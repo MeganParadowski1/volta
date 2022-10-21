@@ -4,14 +4,6 @@ import styles from "../styles/Work.module.css";
 
 const works = [
   {
-    title: "VOLTA at University of Redlands",
-    text1: "Oct 10-14, 2022",
-    text2: "Redlands, CA",
-    linkText: "View schedule",
-    link: "/redlands",
-    thumbnail: "BITE2.png",
-  },
-  {
     title: "MILK",
     text1: "Nov 10-12, 2022",
     text2: "Institute of Art and Olfaction",
