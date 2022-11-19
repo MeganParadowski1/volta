@@ -33,10 +33,6 @@ const links = [
     url: "https://www.artsbeatla.com/2022/09/dance-perfume/",
   },
   {
-    title: "Pasadena Weekly",
-    url: "https://www.pasadenaweekly.com/collective-brings-modern-dance-to-museum-of-neon-art/",
-  },
-  {
     title: "Venn Journal",
     url: "https://global.venn.city/venn-journal/programming/volta-dance-collective-la/?fbclid=PAAaZjvqDCIf4ajI8pIl2s6YCjjAU3Hz_9XnGFbgaZ2GbRRdO39M9tK2WQC-o",
   },
