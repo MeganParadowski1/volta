@@ -1,16 +1,3 @@
-.workMain {
-  z-index: 1;
-  padding: 3rem 0;
-  display: flex;
-  justify-content: center;
-}
-.workBlock {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1600px;
-  justify-content: center;
-}
 .workTitle {
   font-weight: 900;
   font-family: "Bodoni Moda", serif;
@@ -30,11 +17,6 @@
 .workText, .workSubtext {
   line-height: 2;
   letter-spacing: 2px;
-}
-.item {
-  flex: 0 0 30%;
-  margin: 0 10px 40px;
-  z-index: 2;
 }
 .item img {
   width: 100%;

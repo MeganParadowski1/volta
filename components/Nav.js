@@ -8,7 +8,7 @@ import Popup from "./Popup";
 const paths = {
   "/info": "01",
   "/work": "02",
-  "/upcoming": "03",
+  "/press": "03",
 };
 const homePath = "/";
 
@@ -46,8 +46,8 @@ export default function Nav({ props }) {
           <a className={styles.bottomleft}>Work</a>
         </Link>
         <div className={`${styles.bottomright} ${styles.navbg}`}>03</div>
-        <Link href="/upcoming">
-          <a className={styles.bottomright}>Upcoming</a>
+        <Link href="/press">
+          <a className={styles.bottomright}>Press</a>
         </Link>
         <div className="absolute md:right-12 right-8 flex">
           <a
@@ -69,7 +69,7 @@ export default function Nav({ props }) {
           </a>
         </div>
         <Modal open={isModalOpen} closeModal={closeModal} />
-        <Popup open={isPopupOpen} closePopup={closePopup} />
+        {/* <Popup open={isPopupOpen} closePopup={closePopup} /> */}
       </div>
     );
   }

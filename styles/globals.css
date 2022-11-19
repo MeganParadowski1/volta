@@ -32,13 +32,26 @@ a {
 .title {
   padding-top: 6rem;
   text-align: center;
-  font-family: "Bodoni Moda", serif;
-  letter-spacing: 1px;
-  font-size: 3rem;
-  color: #405353;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 300;
+  font-size: 2rem;
 }
 .subtitle {
-  font-family: "Bodoni Moda", serif;
-  color: #405353;
-  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.wrapper {
+  padding: 8rem 3rem;
+  min-height: 100%;
+}
+.paragraph {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.press {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }

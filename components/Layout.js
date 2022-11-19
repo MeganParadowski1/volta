@@ -30,6 +30,7 @@ export default function Layout({ children }) {
           rel="stylesheet"
         ></link>
         <link rel="stylesheet" href="https://use.typekit.net/uyy5sgw.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/mwq0bcv.css" />
       </Head>
       <Nav />
       {children}

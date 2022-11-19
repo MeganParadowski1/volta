@@ -15,7 +15,7 @@
 }
 
 .alternateNav {
-  color: #405353;
+  color: black;
 }
 .navbg {
   font-size: 44px;
@@ -32,7 +32,7 @@
 .topright {
   position: inherit;
   right: 3rem;
-  color: #405353;
+  color: #0d0d0daa;
   z-index: 1;
 }
 .toprightImg {
