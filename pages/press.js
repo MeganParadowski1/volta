@@ -19,6 +19,29 @@ const quotes = [
   },
 ];
 
+const links = [
+  {
+    title: "LA Weekly",
+    url: "https://www.laweekly.com/get-on-up-arts-calendar-november-10-16/#:~:text=delavallade.com.-,Volta%3A%20MILK%20at%20IAO,-Volta%3A%20MILK",
+  },
+  {
+    title: "LAist",
+    url: "https://laist.com/news/arts-and-entertainment/best-events-things-to-do-this-week-los-angeles-southern-california-november-7-10-2022#:~:text=6%20p.m.-,Milk%20with%20Volta,-Institute%20of%20Art",
+  },
+  {
+    title: "ArtsBeatLA",
+    url: "https://www.artsbeatla.com/2022/09/dance-perfume/",
+  },
+  {
+    title: "Pasadena Weekly",
+    url: "https://www.pasadenaweekly.com/collective-brings-modern-dance-to-museum-of-neon-art/",
+  },
+  {
+    title: "Venn Journal",
+    url: "https://global.venn.city/venn-journal/programming/volta-dance-collective-la/?fbclid=PAAaZjvqDCIf4ajI8pIl2s6YCjjAU3Hz_9XnGFbgaZ2GbRRdO39M9tK2WQC-o",
+  },
+];
+
 export default function Press() {
   return (
     <Layout>
@@ -26,13 +49,33 @@ export default function Press() {
         {quotes.map((quote) => (
           <div className="relative z-[2] text-center text-xl uppercase pb-8">
             "{quote.text}"{" "}
-            <a href={quote.link} className="underline underline-offset-4">
+            <a
+              href={quote.link}
+              target="_blank"
+              className="underline underline-offset-4"
+            >
               -{quote.publication}
             </a>
           </div>
         ))}
-        <div className="flex justify-center pt-8">
+        <div className="flex justify-center py-8">
           <img src="milk.jpg" className="max-w-lg" />
+        </div>
+        <div className="text-xl text-center pt-8">
+          |
+          {links.map((link) => (
+            <div className="inline">
+              {" "}
+              <a
+                href={link.url}
+                target="_blank"
+                className="underline underline-offset-4"
+              >
+                {link.title}
+              </a>{" "}
+              |
+            </div>
+          ))}
         </div>
       </div>
       <Footer />
