@@ -24,7 +24,7 @@ export default function Nav({ props }) {
   const showAlternateNav = path !== homePath;
   if (showAlternateNav) {
     var nav = (
-      <div className="absolute p-[3rem] flex w-full">
+      <div className="absolute md:p-[3rem] p-[2rem] flex w-full">
         <Link href="/">
           <img className="h-[20px] cursor-pointer" src="/volta.png" />
         </Link>
