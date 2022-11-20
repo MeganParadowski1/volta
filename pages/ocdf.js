@@ -6,7 +6,7 @@ export default function Ocdf() {
     <Layout>
       <div className="wrapper">
         <div className="lg:flex items-center">
-          <div>
+          <div className="basis-1/2">
             <div className="font-bold text-lg">OCDF</div>
             <div className="paragraph italic pb-4">
               Rose Center Theatre, Westminster, CA
@@ -22,8 +22,28 @@ export default function Ocdf() {
               </div>
             </div>
           </div>
-          <div className="pt-8 lg:pl-8">
-            <img src="OCDF.jpg" />
+          <div className="pt-8 lg:pl-8 basis-1/2">
+            <div
+              style={{
+                padding: "56.25% 0 0 0",
+                position: "relative",
+              }}
+            >
+              <iframe
+                src="https://player.vimeo.com/video/767927413?h=cd135a2d8f&byline=0&portrait=0"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "0",
+                  width: "100%",
+                  height: "100%",
+                }}
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
       </div>
