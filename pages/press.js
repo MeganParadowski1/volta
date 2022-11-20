@@ -56,8 +56,8 @@ export default function Press() {
         ))}
         <div className="flex justify-center py-8">
           <div>
-            <img src="milk.jpg" className="max-w-lg" />
-            <div className="text-[8px] pt-2">Photo by Anna Tse</div>
+            <img src="milk.jpg" className="md:max-w-lg" />
+            <div className="text-[8px] pt-2 text-center">Photo by Anna Tse</div>
           </div>
         </div>
         <div className="text-xl text-center pt-8">
