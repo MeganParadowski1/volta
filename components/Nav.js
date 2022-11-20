@@ -24,13 +24,19 @@ export default function Nav({ props }) {
   const showAlternateNav = path !== homePath;
   if (showAlternateNav) {
     var nav = (
-      <div className={styles.nav}>
-        <div className={`${styles.topright} ${styles.navbg}`}>
-          {paths[path]}
-        </div>
+      <div className="absolute p-[3rem] flex w-full">
         <Link href="/">
-          <a className={`${styles.topleft} ${styles.alternateNav}`}>Home</a>
+          <img className="h-[20px] cursor-pointer" src="/volta.png" />
         </Link>
+        <div className="w-full flex justify-end">
+          <Link href="/info">About</Link>
+          <div className="pl-2">
+            <Link href="/work">Work</Link>
+          </div>
+          <div className="pl-2">
+            <Link href="/press">Press</Link>
+          </div>
+        </div>
       </div>
     );
   } else {

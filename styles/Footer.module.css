@@ -41,10 +41,11 @@
   .footer {
     display: unset;
   }
-  .logo {
-    display: none;
+  .footerItem {
+    display: flex;
+    justify-content: center;
   }
   .icons {
-    display: none;
+    padding-top: 2rem;
   }
 }

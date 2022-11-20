@@ -3,21 +3,12 @@ import styles from "../styles/Footer.module.css";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <a
-        href="https://voltacollective.com"
-        target="_blank"
-        className={styles.footerItem}
-      >
-        <img className={styles.logo} src="/volta.png" />
-      </a>
       <div className={styles.footerItem}>
-        <div className="flex justify-center">
-          <button>
-            <a target="_blank" href="http://eepurl.com/hXmbYz">
-              Join our mailing list
-            </a>
-          </button>
-        </div>
+        <button>
+          <a target="_blank" href="http://eepurl.com/hXmbYz">
+            Join our mailing list
+          </a>
+        </button>
       </div>
       <div className={styles.footerItem}>
         <div className="flex justify-end">
