@@ -21,7 +21,7 @@ const works = [
   },
   {
     title: "Orange County Dance Festival",
-    thumbnail: "OCDF.jpg",
+    thumbnail: "ocdf.png",
     link: "/ocdf",
   },
   {
