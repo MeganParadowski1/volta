@@ -37,8 +37,27 @@ export default function Milk() {
             </div>
           </div>
           <div className="pt-8 lg:pl-8 basis-1/2">
-            <img src="milkThumbnail.png" />
-            <div className="text-[10px] pt-2 text-right">Photo by Anna Tse</div>
+            <div
+              style={{
+                padding: "56.25% 0 0 0",
+                position: "relative",
+              }}
+            >
+              <iframe
+                src="https://player.vimeo.com/video/776655074?h=c355a80a0f"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "0",
+                  width: "100%",
+                  height: "100%",
+                }}
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
       </div>
