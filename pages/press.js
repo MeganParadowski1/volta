@@ -3,12 +3,17 @@ import Layout from "../components/Layout";
 
 const quotes = [
   {
-    text: "What struck me was how immersive it was.",
+    text: "All senses collided and created an overwhelming feeling of loss.",
     publication: "LA Times",
     link: "https://www.latimes.com/entertainment-arts/newsletter/2022-11-16/la-goes-out-watts-towers-reopens-l-a-goes-out#:~:text=The%20Volta%20Collective%20performs%20in%20%E2%80%9CMilk.%E2%80%9D(Anna%20Tse)",
   },
   {
-    text: "their physical strength and choreography deserves to be seen.",
+    text: "A duration and location worthy of the masterful choreography directed by Mamie Green and Megan Paradowski… I left feeling like each one of [the dancers] packed their talent into a container that begged to be expanded.",
+    publication: "Autre Magazine",
+    link: "https://autre.love/journal/2022/12/1/notes-of-tragedy-a-review-of-volta-collectives-milk-the-institute-for-art-and-olfaction",
+  },
+  {
+    text: "Their physical strength and choreography deserves to be seen.",
     publication: "LA Dance Chronicle",
     link: "https://www.ladancechronicle.com/volta-collective-at-glendales-museum-of-neon-art/",
   },

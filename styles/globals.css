@@ -43,6 +43,7 @@ a {
 }
 .wrapper {
   padding: 8rem 3rem;
+  min-height: 90vh;
 }
 .paragraph {
   font-size: 15px;
