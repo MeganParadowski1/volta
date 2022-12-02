@@ -6,29 +6,6 @@
   color: white;
   font-size: 5rem;
 }
-.titleContainer {
-  position: absolute;
-  top: 50%;
-  margin-top: -225px;
-  width: 600px;
-  height: 400px;
-  left: 50%;
-  margin-left: -300px;
-}
-.subtitle {
-  text-align: center;
-  margin-top: -131px;
-  letter-spacing: 10px;
-  margin-left: 10px;
-  color: white;
-  font-weight: 200;
-  font-size: 20px;
-  opacity: 60%;
-  text-transform: uppercase;
-}
-.logo {
-  width: 600px;
-}
 .homeVideo {
   display: false;
   z-index: -2;
@@ -56,7 +33,7 @@
 .infoBlurb {
   color: white;
   position: absolute;
-  top: 8rem;
+  bottom: 10rem;
   right: 15rem;
   width: 325px;
   font-weight: 400;
@@ -66,20 +43,7 @@
   text-transform: uppercase;
 }
 @media only screen and (max-width: 768px) {
-  .logo {
-    width: 350px;
-  }
-  .titleContainer {
-    margin-top: -225px;
-    width: 350px;
-    height: 350px;
-    margin-top: -175px;
-    margin-left: -175px;
-  }
-  .subtitle {
-    margin-top: -80px;
-  }
   .infoBlurb {
-    right: 10px;
+    display: none;
   }
 }

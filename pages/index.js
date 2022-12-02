@@ -24,12 +24,11 @@ export default function Home() {
           />
         )}
       </AnimatePresence>
-      <div className={styles.infoBlurb}>
-        A dance theatre company directed by Megan Paradowski & Mamie Green
-      </div>
-      <div className={styles.titleContainer}>
-        <img className={styles.logo} src="/volta_white_logo.png" />
-        <div className={styles.subtitle}>collective</div>
+      <div className="w-full h-full flex flex-col items-center justify-center">
+        <img className="md:w-[600px] w-[300px]" src="/volta_white_logo.png" />
+        <div className={styles.infoBlurb}>
+          A dance theatre company directed by Megan Paradowski & Mamie Green
+        </div>
       </div>
       <GlitchVideo doneLoading={doneLoading} />
       <div className={styles.videoOverlay} />
