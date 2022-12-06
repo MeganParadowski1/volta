@@ -27,7 +27,7 @@ export default function CoLab() {
               | Sliding scale $25-50
             </div>
             <a href="https://forms.gle/FLZRWMAX8v2sFgDcA" target="_blank">
-              <button className="buttonSecondary">Apply</button>
+              <button className="buttonSecondary">Register</button>
             </a>
           </div>
         </div>
