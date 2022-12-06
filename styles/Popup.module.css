@@ -76,10 +76,10 @@
 }
 @media (max-width: 720px) {
   .popup {
-    width: 300px;
-    height: 300px;
+    width: 92%;
+    height: 400px;
     padding: 40px 10px 30px;
-    left: 15px;
+    left: 4%;
     bottom: 15px;
   }
   .title {
