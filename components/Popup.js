@@ -26,10 +26,7 @@ export default function Popup({ open, closePopup }) {
             <div className={styles.exit} onClick={closePopup}>
               X
             </div>
-            <div
-              className="uppercase text-center text-5xl pb-4"
-              style={{ fontFamily: "acumin-pro, sans-serif" }}
-            >
+            <div className="accentFont uppercase text-center text-5xl pb-4">
               Volta Co-Lab
             </div>
             <div className="pb-4">

@@ -62,3 +62,6 @@ a {
   font-weight: bold;
   letter-spacing: 1px;
 }
+.accentFont {
+  font-family: acumin-pro, sans-serif;
+}

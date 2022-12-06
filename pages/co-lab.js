@@ -5,14 +5,11 @@ export default function CoLab() {
   return (
     <Layout>
       <div className="wrapper">
-        <div
-          className="uppercase text-center text-5xl pb-8"
-          style={{ fontFamily: "acumin-pro, sans-serif" }}
-        >
+        <div className="accentFont uppercase text-center text-5xl pb-8">
           Volta Co-Lab
         </div>
         <div className="flex flex-col items-center">
-          <div className="text-center max-w-6xl pb-12">
+          <div className="text-center md:max-w-6xl pb-12">
             <div className="pb-4">
               Volta Co-Lab is a workshop series that brings together dance
               artists from different backgrounds who share a passion for
@@ -38,29 +35,21 @@ export default function CoLab() {
           <div>
             <img src="1.png" />
             <div className="text-justify pt-4">
-              <div
-                style={{ fontFamily: "acumin-pro, sans-serif" }}
-                className="pb-4"
-              >
-                n(body) with Nat Wilson
-              </div>
-              A n(body) class celebrates the joy of sharing space with people
-              and stretching our limits together. Inspired by the movement
-              practices of Yin Yue and Danielle Agami, this class mixes
-              creativity and clarity to create an atmosphere of mutual
-              inspiration and growth. We'll activate our muscles through guided
-              exercises, explore improvisational tasks, and develop an
-              expressive and embodied movement language. Together, we'll sweat,
-              smile, discover new sensations, and expand our possibilities.
+              <div className="accentFont pb-4">n(body) with Nat Wilson</div>A
+              n(body) class celebrates the joy of sharing space with people and
+              stretching our limits together. Inspired by the movement practices
+              of Yin Yue and Danielle Agami, this class mixes creativity and
+              clarity to create an atmosphere of mutual inspiration and growth.
+              We'll activate our muscles through guided exercises, explore
+              improvisational tasks, and develop an expressive and embodied
+              movement language. Together, we'll sweat, smile, discover new
+              sensations, and expand our possibilities.
             </div>
           </div>
           <div>
             <img src="3.png" />{" "}
             <div className="text-justify pt-4">
-              <div
-                style={{ fontFamily: "acumin-pro, sans-serif" }}
-                className="pb-4"
-              >
+              <div className="accentFont pb-4">
                 Colliding Bodies with Meg and Mamie
               </div>
               Colliding Bodies is a partnering class that explores highly
@@ -74,10 +63,7 @@ export default function CoLab() {
           <div>
             <img src="2.png" />{" "}
             <div className="text-justify pt-4">
-              <div
-                style={{ fontFamily: "acumin-pro, sans-serif" }}
-                className="pb-4"
-              >
+              <div className="accentFont pb-4">
                 Improv and Phrase Work with Brian Golden
               </div>
               This class explores various improvisational tasks that will expand
