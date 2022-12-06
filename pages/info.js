@@ -6,7 +6,10 @@ export default function Info() {
     <Layout>
       <div className="wrapper">
         <div className="md:flex flex-row md:px-16 items-center">
-          <img src="volta_headshot.jpg" className="lg:max-w-md md:max-w-xs" />
+          <div>
+            <img src="IMG_2914.jpg" className="md:max-w-sm" />
+            <div className="text-[8px] pt-2">Photo by Anna Tse</div>
+          </div>
           <div className="paragraph md:pt-0 pt-8 md:pl-8 md:text-left text-justify">
             Directed by Mamie Green and Megan Paradowski, Volta fuses
             physicality, theatricality and multidisciplinary approaches to
