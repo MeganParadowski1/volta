@@ -6,18 +6,33 @@ export default function CoLab() {
     <Layout>
       <div className="wrapper">
         <div
-          className="uppercase text-center text-5xl pb-4"
+          className="uppercase text-center text-5xl pb-8"
           style={{ fontFamily: "acumin-pro, sans-serif" }}
         >
           Volta Co-Lab
         </div>
-        <div className="text-center pb-4">
-          Saturday, January 14th | 12-4pm | Brockus Dance Project
-        </div>
-        <div className="text-center pb-12 underline underline-offset-4 font-bold">
-          <a href="https://forms.gle/FLZRWMAX8v2sFgDcA" target="_blank">
-            Apply!
-          </a>
+        <div className="flex flex-col items-center">
+          <div className="text-center max-w-6xl pb-12">
+            <div className="pb-4">
+              Volta Co-Lab is a workshop series that brings together dance
+              artists from different backgrounds who share a passion for
+              inclusive and innovative dance-making. This month we invite you to
+              take class with Nat Wilson, Brian Golden, and Mamie and Meg of
+              Volta.
+            </div>
+            <div className="pb-6">
+              Saturday, January 14th | 12-4pm |{" "}
+              <div className="inline underline underline-offset-4 decoration-1">
+                <a href="https://brockusprojectdance.org/space" target="_blank">
+                  Brockus Dance Project
+                </a>
+              </div>{" "}
+              | Sliding scale $25-50
+            </div>
+            <a href="https://forms.gle/FLZRWMAX8v2sFgDcA" target="_blank">
+              <button className="buttonSecondary">Apply</button>
+            </a>
+          </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-24 pb-12">
           <div>
@@ -48,6 +63,12 @@ export default function CoLab() {
               >
                 Colliding Bodies with Meg and Mamie
               </div>
+              Colliding Bodies is a partnering class that explores highly
+              physical and acrobatic partnering in a safe and grounded way.
+              Rebound, theatricality, and gesture are used to tell stories
+              through connection to another body. We will discover how to manage
+              each other’s weight in unusual contexts and learn partnering
+              repertory from Volta’s recent work, “MILK.”
             </div>
           </div>
           <div>

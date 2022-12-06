@@ -1,6 +1,7 @@
 import Portal from "./Portal";
 import styles from "../styles/Popup.module.css";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Popup({ open, closePopup }) {
   const [display, setDisplay] = useState(false);
@@ -25,19 +26,30 @@ export default function Popup({ open, closePopup }) {
             <div className={styles.exit} onClick={closePopup}>
               X
             </div>
-            <div className={styles.title}>
-              VOLTA X Institute of Art and Olfaction: MILK
-            </div>
-            <div className={styles.text}>Nov 10-12, 2022</div>
-            <div className={styles.subtext}>Institute of Art and Olfaction</div>
-            <button
-              className="m-auto text-white bg-[#4a6a78] px-4 py-2"
-              onClick={() =>
-                window.open("https://tickets.voltacollective.com", "_blank")
-              }
+            <div
+              className="uppercase text-center text-5xl pb-4"
+              style={{ fontFamily: "acumin-pro, sans-serif" }}
             >
-              Buy Tickets
-            </button>
+              Volta Co-Lab
+            </div>
+            <div className="pb-4">
+              A workshop series that celebrates inclusive and innovative
+              dance-making.
+            </div>
+            <div className="pb-4">
+              Saturday, January 14th | 12-4pm |{" "}
+              <div className="inline underline underline-offset-4 decoration-1">
+                <a href="https://brockusprojectdance.org/space" target="_blank">
+                  Brockus Dance Project
+                </a>
+              </div>{" "}
+              | Sliding scale $25-50
+            </div>
+            <div>
+              <Link href="co-lab">
+                <button className="buttonSecondary">More</button>
+              </Link>
+            </div>
           </div>
         </div>
       )}

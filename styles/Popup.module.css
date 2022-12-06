@@ -2,7 +2,7 @@
   cursor: default;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 450px;
   height: 350px;
   position: absolute;
@@ -14,7 +14,6 @@
   text-align: center;
   z-index: 3;
   letter-spacing: 1px;
-  color: #4a6a78;
 }
 .exit {
   font-size: 21px;
@@ -24,7 +23,6 @@
   top: 19px;
   cursor: pointer;
   font-family: "Montserrat";
-  color: #2f4752;
 }
 .title {
   font-size: 32px;
