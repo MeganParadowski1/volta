@@ -30,11 +30,14 @@ export default function Nav({ props }) {
         </Link>
         <div className="w-full flex justify-end">
           <Link href="/info">About</Link>
-          <div className="pl-2">
+          <div className="pl-4">
             <Link href="/work">Work</Link>
           </div>
-          <div className="pl-2">
+          <div className="pl-4">
             <Link href="/press">Press</Link>
+          </div>
+          <div className="pl-4">
+            <Link href="/co-lab">Teaching</Link>
           </div>
         </div>
       </div>
