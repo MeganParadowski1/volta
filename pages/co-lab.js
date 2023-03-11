@@ -14,11 +14,11 @@ export default function CoLab() {
               Volta Co-Lab is a workshop series that brings together dance
               artists from different backgrounds who share a passion for
               inclusive and innovative dance-making. This month we invite you to
-              take class with Annalise Gehling, Ryan Ruiz, and Meg and Mamie of
-              Volta.
+              take class with Cody Brunelle-Potter, Luke Dakota Zender, and Meg
+              and Mamie of Volta.
             </div>
             <div className="pb-6">
-              Saturday, February 25th | 2-5pm |{" "}
+              Saturday, March 25th | 12-3:30pm |{" "}
               <div className="inline underline underline-offset-4 decoration-1">
                 <a href="https://brockusprojectdance.org/space" target="_blank">
                   Brockus Dance Project
@@ -26,49 +26,52 @@ export default function CoLab() {
               </div>{" "}
               | Sliding scale $25-50
             </div>
-            <a href="https://forms.gle/n5dQVRqwfHoG5ee47" target="_blank">
+            <a href="https://forms.gle/Lu342rirCbgc7LN17" target="_blank">
               <button className="buttonSecondary">Register</button>
             </a>
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-24 pb-12">
           <div>
-            <img src="2.png" />
+            <img src="Luke.jpg" />
             <div className="text-justify pt-4">
               <div className="accentFont pb-4">
-                (un)becoming with Annalise Gehling
+                Energetic Organization with Luke Dakota Zender
               </div>
-              An (un)becoming class investigates the pleasure in embodied
-              storytelling. Inspired by the modes of contemporary dance and
-              physical theatre, this class asks us to be curious about how
-              theatrical expression informs the fullness of our physicality. We
-              will activate the senses through a durational “shake”, move into a
-              combination that calls for deep inner-listening, and play together
-              to write a new movement story.
+              Luke Dakota Zender prioritizes making connections between our
+              mental, emotional states and our physical being. They are informed
+              always by the expansive quality of Mother Nature herself and they
+              hope to cultivate a physical and metaphysical understanding or
+              relationship within their students. Luke Dakota has been inspired
+              by an array of different codified kinesthetic techniques including
+              release, counter technique, floor work, sensory and imagery based
+              improv, breath work and more. Through a thoughtfully curated
+              vocabulary Zender attempts to catalyze a sense of “efficient
+              expansion” that reflects the universe and bodies we were born
+              into.
             </div>
           </div>
           <div>
-            <img src="3.png" />{" "}
+            <img src="Cody.jpg" />{" "}
             <div className="text-justify pt-4">
-              <div className="accentFont pb-4">Creation with Volta</div>
-              This class explores ways of making using gesture, memory, and
-              time. Dive into a dreamlike world of storytelling through
-              physicality and theatricality. We will compose our own material
-              and play within Volta’s choreographic framework.
+              <div className="accentFont pb-4">
+                Sculpture: Inside/Outside with Cody Brunelle-Potter
+              </div>
+              In this workshop we’ll be exploring the ideas of sculpture from
+              both inside and outside perspectives. This will happen through a
+              series of play and debrief sessions. The hope for participants is
+              that there is a time and space to create sculpture to be viewed
+              and embodied while learning about ourselves in the process.
             </div>
           </div>
           <div>
-            <img src="1.png" />{" "}
+            <img src="rep.jpg" />{" "}
             <div className="text-justify pt-4">
-              <div className="accentFont pb-4">
-                Function & Floor with Ryan Ruiz
-              </div>
-              Function & Floor is a class that focuses around the strength of
-              grounding one’s body. This class will begin with a warm up using
-              mobility and strengthening dynamic movements to increase the
-              mover’s range of motion and heat the body to prepare contact with
-              the floor. We will find the connection between body and floor
-              through various movements across the space ending with a phrase.
+              <div className="accentFont pb-4">Rep with Volta</div>
+              This class guides you through an explorative warmup incorporating
+              gesture, core-work, and memory. Next, we will jump in to Volta's
+              movement vocabulary, learning and practicing phrasework or solo
+              work from one of our rep pieces.
             </div>
           </div>
         </div>

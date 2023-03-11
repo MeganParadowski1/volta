@@ -53,11 +53,10 @@ a {
 }
 .buttonSecondary {
   border-radius: 5px;
-  background-color: #639baf;
+  background-color: #cae265;
   padding: 10px;
   width: 100px;
   text-transform: uppercase;
-  color: white;
   font-size: small;
   font-weight: bold;
   letter-spacing: 1px;
