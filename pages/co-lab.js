@@ -67,11 +67,13 @@ export default function CoLab() {
           <div>
             <img src="rep.jpg" />{" "}
             <div className="text-justify pt-4">
-              <div className="accentFont pb-4">Rep with Volta</div>
-              This class guides you through an explorative warmup incorporating
-              gesture, core-work, and memory. Next, we will jump in to Volta's
-              movement vocabulary, learning and practicing phrasework or solo
-              work from one of our rep pieces.
+              <div className="accentFont pb-4">Colliding Bodies with Volta</div>
+              Colliding Bodies is a partnering class that explores highly
+              physical and acrobatic partnering in a safe and grounded way.
+              Rebound, theatricality, and gesture are used to tell stories
+              through connection to another body. We will discover how to manage
+              each other’s weight in unusual contexts and learn partnering
+              repertory.
             </div>
           </div>
         </div>
