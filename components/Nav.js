@@ -58,25 +58,10 @@ export default function Nav({ props }) {
         <Link href="/press">
           <a className={styles.bottomright}>Press</a>
         </Link>
-        <div className="absolute md:right-12 right-8 flex">
-          <a
-            href="https://www.instagram.com/volta_collective/"
-            target="_blank"
-            className={styles.iconLink}
-          >
-            <img src="/insta-logo-white.png" className={styles.toprightImg} />
-          </a>
-          <a
-            href="https://vimeo.com/voltacollective"
-            target="_blank"
-            className={styles.iconLink}
-          >
-            <img src="/vimeo-logo-white.png" className={styles.toprightImg} />
-          </a>
-          <a href="mailto:info@voltacollective.com" className={styles.iconLink}>
-            <img src="/email_icon_white.png" className={styles.toprightImg} />
-          </a>
-        </div>
+        <div className={`${styles.topright} ${styles.navbg}`}>04</div>
+        <Link href="/co-lab">
+          <a className={styles.topright}>Teaching</a>
+        </Link>
         <Modal open={isModalOpen} closeModal={closeModal} />
         {/* <Popup open={isPopupOpen} closePopup={closePopup} /> */}
       </div>

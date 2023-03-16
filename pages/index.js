@@ -28,6 +28,28 @@ export default function Home() {
         <img className="md:w-[600px] w-[300px]" src="/volta_white_logo.png" />
         <div className={styles.infoBlurb}>
           A dance theatre company directed by Megan Paradowski & Mamie Green
+          <div className="flex mt-2">
+            <a
+              href="https://www.instagram.com/volta_collective/"
+              target="_blank"
+              className={styles.iconLink}
+            >
+              <img src="/insta-logo-white.png" className="h-[16px]" />
+            </a>
+            <a
+              href="https://vimeo.com/voltacollective"
+              target="_blank"
+              className={styles.iconLink}
+            >
+              <img src="/vimeo-logo-white.png" className="h-[16px] ml-[10px]" />
+            </a>
+            <a
+              href="mailto:info@voltacollective.com"
+              className={styles.iconLink}
+            >
+              <img src="/email_icon_white.png" className="h-[16px] ml-[10px]" />
+            </a>
+          </div>
         </div>
       </div>
       <GlitchVideo doneLoading={doneLoading} />
