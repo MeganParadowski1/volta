@@ -26,7 +26,7 @@ export default function Footer() {
               <img src="/email_icon_black.png" />
             </a>
             <a target="_blank" href="https://voltacollective.com">
-              <img src="/web-simple.jpeg" />
+              <img src="/web-simple.png" />
             </a>
           </div>
         </div>

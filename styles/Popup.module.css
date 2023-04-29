@@ -23,6 +23,7 @@
   top: 19px;
   cursor: pointer;
   font-family: "Montserrat";
+  z-index: 10;
 }
 .title {
   font-size: 32px;

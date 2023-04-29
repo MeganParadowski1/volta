@@ -63,7 +63,7 @@ export default function Nav({ props }) {
           <a className={styles.topright}>Teaching</a>
         </Link>
         <Modal open={isModalOpen} closeModal={closeModal} />
-        {/* <Popup open={isPopupOpen} closePopup={closePopup} /> */}
+        <Popup open={isPopupOpen} closePopup={closePopup} />
       </div>
     );
   }

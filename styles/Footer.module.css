@@ -40,6 +40,8 @@
 @media (max-width: 720px) {
   .footer {
     display: unset;
+    padding: unset;
+    margin: 0 3rem 3rem;
   }
   .footerItem {
     display: flex;
