@@ -19,7 +19,7 @@ const quotes = [
   },
   {
     text: "[Volta] viscerally tackles the subject matter of emotion overtaking reason, of love spurned so intensely it morphs into a dark mania.",
-    publication: "Hyperallergenic",
+    publication: "Hyperallergic",
     link: "https://hyperallergic.com/780317/finding-medea-in-las-chinatown-milk-iao/",
   },
 ];

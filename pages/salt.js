@@ -45,8 +45,8 @@ export default function Salt() {
               tragedy <i>Medea</i>, and otherworldly musicians Melissa Achten
               and Eli Klausner score the piece live. The immersive atmosphere of
               dark mania will seize more than eyes and ears, as the audience
-              will be encouraged to sample edible installations by conceptual
-              artist and chef Heidi Ross.
+              will be encouraged to sample edible installations by
+              multidisciplinary artist and chef Heidi Ross.
             </div>
             <a
               href="https://dice.fm/event/9wyk7-salt-volta-x-michelle-tea-x-heidi-ross-11th-jun-2220-arts-archives-los-angeles-tickets"
