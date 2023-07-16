@@ -3,6 +3,16 @@ import Layout from "../components/Layout";
 
 const quotes = [
   {
+    text: "This was immersive theatre at its best.",
+    publication: "Fjord Review",
+    link: "https://fjordreview.com/blogs/all/volta-collective-salt",
+  },
+  {
+    text: "Above all, the movement morphs the atmosphere into an enthralling reality, grounded in the human experience but contorted by suspicion and paranoia. Disorientation has never been more luscious.",
+    publication: "LA Dance Chronicle",
+    link: "https://www.ladancechronicle.com/pick-a-side-voltas-salt-sways-senses-and-loyalties/",
+  },
+  {
     text: "All senses collided and created an overwhelming feeling of loss.",
     publication: "LA Times",
     link: "https://www.latimes.com/entertainment-arts/newsletter/2022-11-16/la-goes-out-watts-towers-reopens-l-a-goes-out#:~:text=The%20Volta%20Collective%20performs%20in%20%E2%80%9CMilk.%E2%80%9D(Anna%20Tse)",
@@ -13,11 +23,6 @@ const quotes = [
     link: "https://autre.love/journal/2022/12/1/notes-of-tragedy-a-review-of-volta-collectives-milk-the-institute-for-art-and-olfaction",
   },
   {
-    text: "Their physical strength and choreography deserves to be seen.",
-    publication: "LA Dance Chronicle",
-    link: "https://www.ladancechronicle.com/volta-collective-at-glendales-museum-of-neon-art/",
-  },
-  {
     text: "[Volta] viscerally tackles the subject matter of emotion overtaking reason, of love spurned so intensely it morphs into a dark mania.",
     publication: "Hyperallergic",
     link: "https://hyperallergic.com/780317/finding-medea-in-las-chinatown-milk-iao/",
@@ -25,6 +30,10 @@ const quotes = [
 ];
 
 const links = [
+  {
+    title: "LA Dance Chronicle",
+    url: "https://www.ladancechronicle.com/volta-collective-at-glendales-museum-of-neon-art/",
+  },
   {
     title: "LA Weekly",
     url: "https://www.laweekly.com/get-on-up-arts-calendar-november-10-16/#:~:text=delavallade.com.-,Volta%3A%20MILK%20at%20IAO,-Volta%3A%20MILK",

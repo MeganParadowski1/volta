@@ -5,6 +5,11 @@ import Layout from "../components/Layout";
 
 const works = [
   {
+    title: "SALT",
+    thumbnail: "saltcover.png",
+    link: "/salt",
+  },
+  {
     title: "MILK",
     thumbnail: "milkThumbnail.png",
     link: "/milk",
@@ -45,7 +50,10 @@ export default function Work() {
             <div className="z-[2] cursor-pointer" key={work.title}>
               <Link href={work.link}>
                 <div>
-                  <img src={work.thumbnail} className="aspect-[2/1.1]" />
+                  <img
+                    src={work.thumbnail}
+                    className="aspect-[2/1.1] object-cover"
+                  />
                   <div className="subtitle pt-4 text-center">{work.title}</div>
                 </div>
               </Link>

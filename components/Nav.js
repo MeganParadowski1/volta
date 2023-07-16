@@ -28,15 +28,15 @@ export default function Nav({ props }) {
         <Link href="/">
           <img className="h-[20px] cursor-pointer" src="/volta.png" />
         </Link>
-        <div className="w-full flex justify-end">
+        <div className="w-full flex justify-end items-center md:text-base text-xs">
           <Link href="/info">About</Link>
-          <div className="pl-4">
+          <div className="md:pl-4 pl-2">
             <Link href="/work">Work</Link>
           </div>
-          <div className="pl-4">
+          <div className="md:pl-4 pl-2">
             <Link href="/press">Press</Link>
           </div>
-          <div className="pl-4">
+          <div className="md:pl-4 pl-2">
             <Link href="/co-lab">Teaching</Link>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function Nav({ props }) {
           <a className={styles.topright}>Teaching</a>
         </Link>
         <Modal open={isModalOpen} closeModal={closeModal} />
-        <Popup open={isPopupOpen} closePopup={closePopup} />
+        {/* <Popup open={isPopupOpen} closePopup={closePopup} /> */}
       </div>
     );
   }
