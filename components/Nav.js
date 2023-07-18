@@ -29,14 +29,32 @@ export default function Nav({ props }) {
           <img className="h-[20px] cursor-pointer" src="/volta.png" />
         </Link>
         <div className="w-full flex justify-end items-center md:text-base text-xs">
-          <Link href="/info">About</Link>
-          <div className="md:pl-4 pl-2">
+          <div
+            className={
+              "md:pl-4 pl-2" + (path.includes("info") ? " font-thin" : "")
+            }
+          >
+            <Link href="/info">About</Link>
+          </div>
+          <div
+            className={
+              "md:pl-4 pl-2" + (path.includes("work") ? " font-thin" : "")
+            }
+          >
             <Link href="/work">Work</Link>
           </div>
-          <div className="md:pl-4 pl-2">
+          <div
+            className={
+              "md:pl-4 pl-2" + (path.includes("press") ? " font-thin" : "")
+            }
+          >
             <Link href="/press">Press</Link>
           </div>
-          <div className="md:pl-4 pl-2">
+          <div
+            className={
+              "md:pl-4 pl-2" + (path.includes("co-lab") ? " font-thin" : "")
+            }
+          >
             <Link href="/co-lab">Teaching</Link>
           </div>
         </div>

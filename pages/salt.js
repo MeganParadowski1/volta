@@ -73,14 +73,14 @@ export default function Salt() {
             </div>
           </div>
           <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
-            <img src="salt1.jpg" className="w-full h-full object-cover" />
-            <img src="salt3.jpg" className="w-full h-full object-cover" />
-            <img src="salt4.jpg" className="w-full h-full object-cover" />
-            <img src="salt2.png" className="row-span-2 row-end-auto" />
-            <img src="salt7.jpg" className="w-full h-full object-cover" />
-            <img src="salt8.jpg" className="w-full h-full object-cover" />
-            <img src="salt5.jpg" className="w-full h-full object-cover" />
-            <img src="salt6.jpg" className="w-full h-full object-cover" />
+            <img src="../salt1.jpg" className="w-full h-full object-cover" />
+            <img src="../salt3.jpg" className="w-full h-full object-cover" />
+            <img src="../salt4.jpg" className="w-full h-full object-cover" />
+            <img src="../salt2.png" className="row-span-2 row-end-auto" />
+            <img src="../salt7.jpg" className="w-full h-full object-cover" />
+            <img src="../salt8.jpg" className="w-full h-full object-cover" />
+            <img src="../salt5.jpg" className="w-full h-full object-cover" />
+            <img src="../salt6.jpg" className="w-full h-full object-cover" />
           </div>
           <div className="text-xs pt-2 text-right w-full pb-16">
             Photos by Anya GTA
