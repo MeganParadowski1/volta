@@ -55,7 +55,7 @@ export default function Nav({ props }) {
               "md:pl-4 pl-2" + (path.includes("co-lab") ? " font-thin" : "")
             }
           >
-            <Link href="/co-lab">Teaching</Link>
+            <Link href="/teaching">Teaching</Link>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Nav({ props }) {
           <a className={styles.bottomright}>Press</a>
         </Link>
         <div className={`${styles.topright} ${styles.navbg}`}>04</div>
-        <Link href="/co-lab">
+        <Link href="/teaching">
           <a className={styles.topright}>Teaching</a>
         </Link>
         <Modal open={isModalOpen} closeModal={closeModal} />
