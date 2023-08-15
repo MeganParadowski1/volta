@@ -7,7 +7,7 @@ export default function Ocdf() {
       <div className="wrapper">
         <div className="lg:flex items-center">
           <div className="basis-1/2">
-            <div className="font-bold text-lg">OCDF</div>
+            <div className="font-bold text-lg">Backwash at OCDF</div>
             <div className="paragraph italic pb-4">
               Rose Center Theatre, Westminster, CA
             </div>
