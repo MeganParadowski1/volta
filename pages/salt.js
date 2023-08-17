@@ -14,13 +14,13 @@ export default function Salt() {
   return (
     <Layout>
       <div className="wrapper">
-        <div className="lg:flex lg:flex-col items-center pt-8">
-          <div className="lg:flex lg:px-16 pb-16">
+        <div className="lg:flex lg:flex-col items-center">
+          <div className="font-bold text-7xl">SALT</div>
+          <div className="paragraph italic pb-4">
+            2220 Arts + Archives, Los Angeles, CA
+          </div>
+          <div className="lg:flex lg:px-16 pb-16  pt-8">
             <div className="basis-1/2 lg:pb-0 pb-8">
-              <div className="font-bold text-lg">SALT</div>
-              <div className="paragraph italic pb-4">
-                2220 Arts + Archives, Los Angeles, CA
-              </div>
               <div className="paragraph text-justify">
                 Directed by{" "}
                 <div className="font-bold inline">Megan Paradowski</div> and{" "}
@@ -48,7 +48,7 @@ export default function Salt() {
                 conflicting conclusions about what was just witnessed.
               </div>
             </div>
-            <div className="lg:pl-8 basis-1/2">
+            <div className="lg:pl-8 basis-1/2 flex flex-col justify-center">
               <div
                 style={{
                   padding: "56.25% 0 0 0",
@@ -84,6 +84,29 @@ export default function Salt() {
           </div>
           <div className="text-xs pt-2 text-right w-full pb-16">
             Photos by Anya GTA
+          </div>
+          <div className="flex flex-col w-full pb-16">
+            <div
+              style={{
+                padding: "56.25% 0 0 0",
+                position: "relative",
+              }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/jRjUEyqhgW4"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "0",
+                  width: "100%",
+                  height: "100%",
+                }}
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
           <div className="press text-justify uppercase pb-8 md:px-16">
             "SALT is a true full-body experience. Jason and Medea split the
