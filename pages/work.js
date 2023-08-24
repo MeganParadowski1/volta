@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
-const concert_works = [
+const performance_works = [
   {
     title: "SALT",
     thumbnail: "saltcover.png",
@@ -88,7 +88,7 @@ export default function Work() {
       <div className="wrapper">
         <div className="flex w-full justify-center pb-16">
           <button
-            onClick={() => changeRoute("concert")}
+            onClick={() => changeRoute("performance")}
             className={
               "pr-8 subtitle" +
               (!showCommercial
@@ -96,7 +96,7 @@ export default function Work() {
                 : "")
             }
           >
-            Concert
+            Performance
           </button>
           <button
             onClick={() => changeRoute("commercial")}
@@ -127,7 +127,7 @@ export default function Work() {
                   </Link>
                 </div>
               ))
-            : concert_works.map((work) => (
+            : performance_works.map((work) => (
                 <div className="z-[2] cursor-pointer" key={work.title}>
                   <Link href={work.link}>
                     <div>
