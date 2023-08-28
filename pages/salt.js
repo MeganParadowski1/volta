@@ -15,11 +15,25 @@ export default function Salt() {
     <Layout>
       <div className="wrapper">
         <div className="lg:flex lg:flex-col items-center">
-          <div className="font-bold text-7xl">SALT</div>
-          <div className="paragraph italic pb-4">
+          <div className="font-bold text-7xl text-center">SALT</div>
+          <div className="paragraph italic pb-4 text-center">
             2220 Arts + Archives, Los Angeles, CA
           </div>
-          <div className="lg:flex lg:px-16 pb-16  pt-8">
+          <div className="text-red-500 press uppercase pb-8 text-center">
+            SALT has been selected to perform at{" "}
+            <a
+              className="underline underline-offset-4"
+              href="https://www.home4cooperation.info/buffer-fringe-2023/"
+              target="_blank"
+            >
+              Buffer Fringe Festival
+            </a>{" "}
+            in Cyprus this October!
+          </div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            About
+          </div>
+          <div className="lg:flex lg:px-16 pb-16">
             <div className="basis-1/2 lg:pb-0 pb-8">
               <div className="paragraph text-justify">
                 Directed by{" "}
@@ -72,18 +86,43 @@ export default function Salt() {
               <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
-            <img src="../salt1.jpg" className="w-full h-full object-cover" />
-            <img src="../salt3.jpg" className="w-full h-full object-cover" />
-            <img src="../salt4.jpg" className="w-full h-full object-cover" />
-            <img src="../salt2.png" className="row-span-2 row-end-auto" />
-            <img src="../salt7.jpg" className="w-full h-full object-cover" />
-            <img src="../salt8.jpg" className="w-full h-full object-cover" />
-            <img src="../salt5.jpg" className="w-full h-full object-cover" />
-            <img src="../salt6.jpg" className="w-full h-full object-cover" />
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            Praise for SALT
           </div>
-          <div className="text-xs pt-2 text-right w-full pb-16">
-            Photos by Anya GTA
+          <div className="press text-justify uppercase pb-8 md:px-16">
+            "SALT is a true full-body experience. Jason and Medea split the
+            audience into two, each telling their side of the story until a
+            culminating monologue from each brings your loyalty into question.
+            Can you blame me? they ask. Text by Wells and Sammy Loren ropes you
+            into the conflict; it is impossible to remain impartial. Above all,
+            the movement morphs the atmosphere into an enthralling reality,
+            grounded in the human experience but contorted by suspicion and
+            paranoia. Disorientation has never been more luscious."
+            <a
+              href="https://www.ladancechronicle.com/pick-a-side-voltas-salt-sways-senses-and-loyalties/"
+              target="_blank"
+              className="underline underline-offset-4"
+            >
+              {" "}
+              -LA Dance Chronicle
+            </a>
+          </div>
+          <div className="press text-justify uppercase md:px-16 pb-8">
+            "Still, this was immersive theater at its best: In between bites of
+            Chef Heidi’s divine dishes, the choreography and its execution
+            seemed a perfect fit for the bare-boned space, which did happen to
+            house several book-laden shelves."
+            <a
+              href="https://fjordreview.com/blogs/all/volta-collective-salt"
+              target="_blank"
+              className="underline underline-offset-4"
+            >
+              {" "}
+              -Fjord Review
+            </a>
+          </div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            Volta for Tastemade
           </div>
           <div className="flex flex-col w-full pb-16">
             <div
@@ -108,39 +147,26 @@ export default function Salt() {
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
-          <div className="press text-justify uppercase pb-8 md:px-16">
-            "SALT is a true full-body experience. Jason and Medea split the
-            audience into two, each telling their side of the story until a
-            culminating monologue from each brings your loyalty into question.
-            Can you blame me? they ask. Text by Wells and Sammy Loren ropes you
-            into the conflict; it is impossible to remain impartial. Above all,
-            the movement morphs the atmosphere into an enthralling reality,
-            grounded in the human experience but contorted by suspicion and
-            paranoia. Disorientation has never been more luscious."
-            <a
-              href="https://www.ladancechronicle.com/pick-a-side-voltas-salt-sways-senses-and-loyalties/"
-              target="_blank"
-              className="underline underline-offset-4"
-            >
-              {" "}
-              -LA Dance Chronicle
-            </a>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            Performance Photos
           </div>
-          <div className="press text-justify uppercase md:px-16">
-            "Still, this was immersive theater at its best: In between bites of
-            Chef Heidi’s divine dishes, the choreography and its execution
-            seemed a perfect fit for the bare-boned space, which did happen to
-            house several book-laden shelves."
-            <a
-              href="https://fjordreview.com/blogs/all/volta-collective-salt"
-              target="_blank"
-              className="underline underline-offset-4"
-            >
-              {" "}
-              -Fjord Review
-            </a>
+          <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
+            <img src="../salt1.jpg" className="w-full h-full object-cover" />
+            <img src="../salt3.jpg" className="w-full h-full object-cover" />
+            <img src="../salt4.jpg" className="w-full h-full object-cover" />
+            <img src="../salt2.png" className="row-span-2 row-end-auto" />
+            <img src="../salt7.jpg" className="w-full h-full object-cover" />
+            <img src="../salt8.jpg" className="w-full h-full object-cover" />
+            <img src="../salt5.jpg" className="w-full h-full object-cover" />
+            <img src="../salt6.jpg" className="w-full h-full object-cover" />
           </div>
-          <div className="flex flex-col w-full pt-16">
+          <div className="text-xs pt-2 text-right w-full pb-8">
+            Photos by Anya GTA
+          </div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            Promo Trailer
+          </div>
+          <div className="flex flex-col w-full">
             <div
               style={{
                 padding: "56.25% 0 0 0",
