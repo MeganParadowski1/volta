@@ -15,20 +15,32 @@ export default function Salt() {
     <Layout>
       <div className="wrapper">
         <div className="lg:flex lg:flex-col items-center">
-          <div className="font-bold text-7xl text-center">SALT</div>
-          <div className="paragraph italic pb-4 text-center">
-            2220 Arts + Archives, Los Angeles, CA
+          <div className="font-bold text-7xl text-center pb-16">SALT</div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            Performances
           </div>
-          <div className="text-red-500 press uppercase pb-8 text-center">
-            SALT has been selected to perform at{" "}
+          <div className="lg:px-16 pb-16 paragraph text-center">
+            <div className="leading-8">
             <a
-              className="underline underline-offset-4"
-              href="https://www.home4cooperation.info/buffer-fringe-2023/"
-              target="_blank"
-            >
-              Buffer Fringe Festival
-            </a>{" "}
-            in Cyprus this October!
+                className="underline underline-offset-4 font-bold"
+                href="https://www.2220arts.org/"
+                target="_blank"
+              >2220 Arts + Archives</a> | June 11-13, 2023 | Los Angeles, CA <div className="text-xs font-medium">*Made possible by a grant from the German Consulate General</div>
+            </div>
+            <div className="leading-8">
+            <a
+                className="underline underline-offset-4 font-bold"
+                href="https://www.home4cooperation.info/buffer-fringe-2023/"
+                target="_blank"
+              >Buffer Fringe Festival</a> | October 5, 2023 | Nicosia, Cyprus <div className="text-xs font-medium">*Made possible by a grant from the US Embassy in Cyprus</div>
+            </div>
+            <div className="leading-8">
+            <a
+                className="underline underline-offset-4 font-bold"
+                href="https://www.home4cooperation.info/buffer-fringe-2023/"
+                target="_blank"
+              >Metre Squared</a> | October 8, 2023 | London, UK
+            </div>
           </div>
           <div className="text-xl text-center uppercase pb-8 md:px-16">
             About
