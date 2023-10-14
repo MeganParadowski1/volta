@@ -20,6 +20,26 @@ export default function Info() {
             the LA Times.
           </div>
         </div>
+        <div className="paragraph text-center leading-8 pt-16">
+          <div><strong>Grants</strong></div>
+          German Consulate General in Los Angeles<br/>
+          US Embassy in Cyprus
+          <div className="pt-8"><strong>Performances</strong></div>
+          Metre Squared, London<br/>
+          Mason Gross School of the Arts<br/>
+          2220 Arts + Archives, LA<br/>
+          Institute of Art and Olfaction, LA<br/>
+          Hosek Contemporary, Berlin<br/>
+          NAVEL LA<br/>
+          Museum of Neon Art, LA<br/>
+          <div className="pt-8"><strong>Festivals</strong></div>
+          Buffer Fringe Performing Arts Festival, Cyprus<br/>
+          Los Angeles Dance Festival<br/>
+          Orange County Dance Festival<br/>
+          Sizzle! Dance & Film Festival<br/>
+          <div className="pt-8"><strong>Residencies</strong></div>
+          University of Redlands
+        </div>
       </div>
       <Footer />
     </Layout>
