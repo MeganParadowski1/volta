@@ -119,7 +119,7 @@ export default function Salt() {
               -LA Dance Chronicle
             </a>
           </div>
-          <div className="press text-justify uppercase md:px-16 pb-8">
+          <div className="press text-justify uppercase md:px-16 pb-16">
             "Still, this was immersive theater at its best: In between bites of
             Chef Heidi’s divine dishes, the choreography and its execution
             seemed a perfect fit for the bare-boned space, which did happen to
@@ -132,6 +132,39 @@ export default function Salt() {
               {" "}
               -Fjord Review
             </a>
+          </div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            SALT at Buffer Fringe Festival
+          </div>
+          <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
+            <img src="../buffer6.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer4.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer7.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer1.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer10.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer8.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer13.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer9.jpg" className="w-full h-full object-cover" />
+            <img src="../buffer12.jpg" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-xs pt-4 w-full pb-16">
+            Photos by Ozan Tezvaran
+          </div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
+            SALT at 2220 Arts + Archives
+          </div>
+          <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
+            <img src="../salt1.jpg" className="w-full h-full object-cover" />
+            <img src="../salt3.jpg" className="w-full h-full object-cover" />
+            <img src="../salt4.jpg" className="w-full h-full object-cover" />
+            <img src="../salt2.png" className="row-span-2 row-end-auto" />
+            <img src="../salt7.jpg" className="w-full h-full object-cover" />
+            <img src="../salt8.jpg" className="w-full h-full object-cover" />
+            <img src="../salt5.jpg" className="w-full h-full object-cover" />
+            <img src="../salt6.jpg" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-xs pt-4 w-full pb-16">
+            Photos by Anya GTA
           </div>
           <div className="text-xl text-center uppercase pb-8 md:px-16">
             Volta for Tastemade
@@ -158,22 +191,6 @@ export default function Salt() {
               ></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div className="text-xl text-center uppercase pb-8 md:px-16">
-            Performance Photos
-          </div>
-          <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
-            <img src="../salt1.jpg" className="w-full h-full object-cover" />
-            <img src="../salt3.jpg" className="w-full h-full object-cover" />
-            <img src="../salt4.jpg" className="w-full h-full object-cover" />
-            <img src="../salt2.png" className="row-span-2 row-end-auto" />
-            <img src="../salt7.jpg" className="w-full h-full object-cover" />
-            <img src="../salt8.jpg" className="w-full h-full object-cover" />
-            <img src="../salt5.jpg" className="w-full h-full object-cover" />
-            <img src="../salt6.jpg" className="w-full h-full object-cover" />
-          </div>
-          <div className="text-xs pt-2 text-right w-full pb-8">
-            Photos by Anya GTA
           </div>
           <div className="text-xl text-center uppercase pb-8 md:px-16">
             Promo Trailer
