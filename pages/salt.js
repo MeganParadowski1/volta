@@ -151,6 +151,26 @@ export default function Salt() {
             Photos by Ozan Tezvaran
           </div>
           <div className="text-xl text-center uppercase pb-8 md:px-16">
+            SALT at Metre Squared
+          </div>
+          <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
+            <img src="../metre10.jpg" className="w-full h-full object-cover" />
+            <img src="../metre6.jpg" className="w-full h-full object-cover" />
+            <img src="../metre3.jpg" className="w-full h-full object-cover" />
+            <img src="../metre5.jpg" className="w-full h-full object-cover" />
+            <img src="../metre4.jpg" className="w-full h-full object-cover" />
+            <img src="../metre11.jpg" className="w-full h-full object-cover" />
+            <img src="../metre8.jpg" className="w-full h-full object-cover" />
+            <img src="../metre9.jpg" className="w-full h-full object-cover" />
+            <img src="../metre13.jpg" className="w-full h-full object-cover" />
+            <img src="../metre1.jpg" className="w-full h-full object-cover" />
+            <img src="../metre7.jpg" className="w-full h-full object-cover" />
+            <img src="../metre2.jpg" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-xs pt-4 w-full pb-16">
+            Photos by Mich Rose
+          </div>
+          <div className="text-xl text-center uppercase pb-8 md:px-16">
             SALT at 2220 Arts + Archives
           </div>
           <div className="grid lg:grid-cols-3 grid-cols-1 grid-flow-row gap-4 ">
